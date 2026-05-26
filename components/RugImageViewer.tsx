@@ -31,13 +31,11 @@ export default function RugImageViewer({ rug, title }: Props) {
               priority
               unoptimized
             />
-            {/* Expand hint */}
-            <div
-              className="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity"
-            >
+            {/* Expand hint — bottom right on hover */}
+            <div className="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
               <div
                 className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-sm text-xs tracking-widest uppercase"
-                style={{ backgroundColor: 'rgba(18,6,0,0.6)', color: 'var(--gold-light)' }}
+                style={{ backgroundColor: 'rgba(13,4,2,0.65)', color: 'rgba(255,255,255,0.8)' }}
               >
                 <svg width="11" height="11" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M9 1h4v4M5 13H1V9M14 1l-5 5M1 13l5-5"/>
