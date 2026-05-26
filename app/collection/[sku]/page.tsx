@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import { getAllRugs, getRugBySku, formatDimensions } from '@/lib/rugs'
+import RugImageViewer from '@/components/RugImageViewer'
 import type { Metadata } from 'next'
 
 interface Props {
@@ -59,39 +59,8 @@ export default async function RugDetailPage({ params }: Props) {
       </nav>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Image */}
-        <div
-          className="relative aspect-[4/5] rounded-sm overflow-hidden"
-          style={{ backgroundColor: 'var(--cream-dark)' }}
-        >
-          {rug.image_url ? (
-            <Image
-              src={rug.image_url}
-              alt={title}
-              fill
-              className="object-cover"
-              priority
-              unoptimized
-            />
-          ) : (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-              <div className="text-8xl opacity-10" style={{ color: 'var(--burgundy)' }}>✦</div>
-              <p className="text-sm tracking-widest uppercase opacity-30" style={{ color: 'var(--brown-mid)' }}>
-                Image coming soon
-              </p>
-            </div>
-          )}
-
-          {/* Era badge */}
-          {rug.era && (
-            <span
-              className="absolute top-4 left-4 text-xs tracking-widest uppercase px-3 py-1"
-              style={{ backgroundColor: 'var(--burgundy)', color: 'var(--gold-light)' }}
-            >
-              {rug.era}
-            </span>
-          )}
-        </div>
+        {/* Image — click to fullscreen */}
+        <RugImageViewer rug={rug} title={title} />
 
         {/* Details */}
         <div>

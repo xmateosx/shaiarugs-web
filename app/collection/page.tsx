@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 import RugCard from '@/components/RugCard'
+import Lightbox from '@/components/Lightbox'
 import { getAllRugs, getCategories, getUniqueOrigins, filterRugs } from '@/lib/rugs'
 
 function CollectionContent() {
@@ -13,6 +14,7 @@ function CollectionContent() {
   const [origin, setOrigin]     = useState('')
   const [era, setEra]           = useState('')
   const [search, setSearch]     = useState('')
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   const allRugs    = getAllRugs()
   const categories = getCategories()
@@ -125,10 +127,22 @@ function CollectionContent() {
         </div>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {filtered.map(rug => (
-            <RugCard key={rug.sku ?? rug.description_raw?.slice(0, 20)} rug={rug} />
+          {filtered.map((rug, i) => (
+            <RugCard
+              key={rug.sku ?? rug.description_raw?.slice(0, 20)}
+              rug={rug}
+              onZoom={() => setLightboxIndex(i)}
+            />
           ))}
         </div>
+      )}
+      {lightboxIndex !== null && (
+        <Lightbox
+          rugs={filtered}
+          index={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onChange={setLightboxIndex}
+        />
       )}
     </div>
   )
