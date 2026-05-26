@@ -4,7 +4,12 @@ import rugsData from '@/data/rugs.json'
 const rugs = rugsData as unknown as Rug[]
 
 export function getAllRugs(): Rug[] {
-  return rugs
+  // Rugs with images first, then placeholders
+  return [...rugs].sort((a, b) => {
+    const aHas = a.image_url ? 1 : 0
+    const bHas = b.image_url ? 1 : 0
+    return bHas - aHas
+  })
 }
 
 export function getRugBySku(sku: string): Rug | undefined {
