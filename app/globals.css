@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream:       #F5F0E8;
+  --cream-dark:  #EDE5D8;
+  --burgundy:    #7A1E2E;
+  --burgundy-dk: #5C1522;
+  --gold:        #C9A84C;
+  --gold-light:  #E8D5A3;
+  --brown-dark:  #1C0A00;
+  --brown-mid:   #5C3D2E;
+  --border:      #D4C5B0;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream:       var(--cream);
+  --color-cream-dark:  var(--cream-dark);
+  --color-burgundy:    var(--burgundy);
+  --color-burgundy-dk: var(--burgundy-dk);
+  --color-gold:        var(--gold);
+  --color-gold-light:  var(--gold-light);
+  --color-brown-dark:  var(--brown-dark);
+  --color-brown-mid:   var(--brown-mid);
+  --color-border:      var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  color: var(--brown-dark);
+  font-family: 'Lato', Georgia, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Gold divider ornament */
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gold);
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+/* Rug card hover */
+.rug-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.rug-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(28, 10, 0, 0.15);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream-dark); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }

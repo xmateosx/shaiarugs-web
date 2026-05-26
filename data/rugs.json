@@ -1,0 +1,3281 @@
+[
+  {
+    "sku": "12488",
+    "category": "European & Textiles",
+    "origin": {
+      "country": "France",
+      "label": "French/Aubusson"
+    },
+    "rug_type": "Aubusson",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "5-8x9-8",
+      "width_ft": 5,
+      "width_in": 8,
+      "length_ft": 9,
+      "length_in": 8,
+      "width_decimal": 5.67,
+      "length_decimal": 9.67,
+      "area_sq_ft": 54.8
+    },
+    "circa_year": 1880,
+    "circa_decade": "1880s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Aubusson 5-8x9-8 ca. 1880 a little wear but wonderful colors",
+    "description_raw": "12488\nAubusson 5-8x9-8 ca. 1880 a little wear but wonderful colors",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "12754",
+    "category": "European & Textiles",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Shawl",
+    "weave_type": "woven/textile",
+    "dimensions": {
+      "raw": "5x5",
+      "width_ft": 5,
+      "width_in": 0,
+      "length_ft": 5,
+      "length_in": 0,
+      "width_decimal": 5,
+      "length_decimal": 5,
+      "area_sq_ft": 25
+    },
+    "circa_year": 1950,
+    "circa_decade": "1950s",
+    "era": "vintage",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Kashmir-shawl5x5 ca. 1950 Persian Shawl made to fold in half and wear",
+    "description_raw": "12754\nKashmir-shawl5x5 ca. 1950 Persian Shawl made to fold in half and wear",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "9051",
+    "category": "European & Textiles",
+    "origin": {
+      "country": "England",
+      "label": "English"
+    },
+    "rug_type": "Tapestry",
+    "weave_type": "needlepoint",
+    "dimensions": {
+      "raw": "4-5x5-5",
+      "width_ft": 4,
+      "width_in": 5,
+      "length_ft": 5,
+      "length_in": 5,
+      "width_decimal": 4.42,
+      "length_decimal": 5.42,
+      "area_sq_ft": 23.9
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "English Tapestry Surprised Lovers 4-5x5-5 ca 1900 wonderful needlepoint with petti point. The design is a copy of the famous painting by René Gaillard called Les Amans Surpris (The Surprised Lovers)",
+    "description_raw": "9051\nEnglish Tapestry Surprised Lovers 4-5x5-5 ca 1900 wonderful needlepoint with petti point. The design is a copy of the famous painting by René Gaillard called Les Amans Surpris (The Surprised Lovers)",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "11243",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "12-3x19-3",
+      "width_ft": 12,
+      "width_in": 3,
+      "length_ft": 19,
+      "length_in": 3,
+      "width_decimal": 12.25,
+      "length_decimal": 19.25,
+      "area_sq_ft": 235.8
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "navy",
+      "navy blue",
+      "red"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Serapi 12-3x19-3 ca.1890 The light colored background and the lack of a lot of navy blue make it a very desirable rug. Also, there are four unusual creatures on the field of the rug.",
+    "description_raw": "11243\nPersian Serapi 12-3x19-3 ca.1890 The light colored background and the lack of a lot of navy blue make it a very desirable rug. Also, there are four unusual creatures on the field of the rug.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "12485",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Turkey",
+      "label": "Turkish"
+    },
+    "rug_type": "Keyseri",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "14x19",
+      "width_ft": 14,
+      "width_in": 0,
+      "length_ft": 19,
+      "length_in": 0,
+      "width_decimal": 14,
+      "length_decimal": 19,
+      "area_sq_ft": 266
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "14x19 Turkish Keyseri ca. 1910 wonderful pastel colors in a very rare early Turkish rug",
+    "description_raw": "12485\n14x19 Turkish Keyseri ca. 1910 wonderful pastel colors in a very rare early Turkish rug",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "12710",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Iranian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "13 x 19",
+      "width_ft": 13,
+      "width_in": 0,
+      "length_ft": 19,
+      "length_in": 0,
+      "width_decimal": 13,
+      "length_decimal": 19,
+      "area_sq_ft": 247
+    },
+    "colors": [
+      "blue",
+      "ivory",
+      "light blue"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Iranian Heriz (modern)13 x 19 - very decorative design with an ivory field and light blue corners",
+    "description_raw": "12710\nIranian Heriz (modern)13 x 19 - very decorative design with an ivory field and light blue corners",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "12758",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "11-9x15-3",
+      "width_ft": 11,
+      "width_in": 9,
+      "length_ft": 15,
+      "length_in": 3,
+      "width_decimal": 11.75,
+      "length_decimal": 15.25,
+      "area_sq_ft": 179.2
+    },
+    "colors": [
+      "ivory",
+      "red",
+      "rust",
+      "salmon"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A magnificent antique Persian Serapi, which is just a very early Heriz rug, 11-9x15-3. This rug is very unusual because of the simple motif and not a lot of pattern. It has a light ivory background with salmon-colored corners and a rust border. Spectacular rug!",
+    "description_raw": "12758\nA magnificent antique Persian Serapi, which is just a very early Heriz rug, 11-9x15-3. This rug is very unusual because of the simple motif and not a lot of pattern. It has a light ivory background with salmon-colored corners and a rust border. Spectacular rug!",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "13463",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "10-7x 14-10",
+      "width_ft": 10,
+      "width_in": 7,
+      "length_ft": 14,
+      "length_in": 10,
+      "width_decimal": 10.58,
+      "length_decimal": 14.83,
+      "area_sq_ft": 157
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "light blue"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Sarouk, 10-7x 14-10, circa 1915, very rare light blue background Sarouk. Extraordinary wool pile and really great condition.",
+    "description_raw": "13463\nPersian Sarouk, 10-7x 14-10, circa 1915, very rare light blue background Sarouk. Extraordinary wool pile and really great condition.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15519",
+    "category": "Oversize Rugs",
+    "origin": {},
+    "rug_type": "Mahal",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "11x15-1",
+      "width_ft": 11,
+      "width_in": 0,
+      "length_ft": 15,
+      "length_in": 1,
+      "width_decimal": 11,
+      "length_decimal": 15.08,
+      "area_sq_ft": 165.9
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "green",
+      "ivory",
+      "navy",
+      "terracotta"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "diamond"
+      ]
+    },
+    "description_clean": "Circa 1900, 11x15-1 This Mahal rug features a central diamond medallion on a rich terracotta field, adorned with intricate floral and geometric motifs in blue, ivory, and green. The ornate border, highlighted in deep navy, frames the design beautifully, showcasing the rug's exquisite craftsmanship and timeless elegance.",
+    "description_raw": "15519\nCirca 1900, 11x15-1 This Mahal rug features a central diamond medallion on a rich terracotta field, adorned with intricate floral and geometric motifs in blue, ivory, and green. The ornate border, highlighted in deep navy, frames the design beautifully, showcasing the rug's exquisite craftsmanship and timeless elegance.",
+    "flags": [
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "6272",
+    "category": "Oversize Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Bakhtiari",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "12-5x14",
+      "width_ft": 12,
+      "width_in": 5,
+      "length_ft": 14,
+      "length_in": 0,
+      "width_decimal": 12.42,
+      "length_decimal": 14,
+      "area_sq_ft": 173.8
+    },
+    "circa_year": 1960,
+    "circa_decade": "1960s",
+    "era": "vintage",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Bakhtiari, 12-5x14, circa 1960",
+    "description_raw": "6272\nPersian Bakhtiari, 12-5x14, circa 1960",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "11878",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "9x11",
+      "width_ft": 9,
+      "width_in": 0,
+      "length_ft": 11,
+      "length_in": 0,
+      "width_decimal": 9,
+      "length_decimal": 11,
+      "area_sq_ft": 99
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "rust"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "This is a great antique Persian Serapi. These rugs also known as an antique Heriz,\nbecause they were woven in the city of Heriz before the transition to busier patterns\nand brighter colors. This rug has a very stately design with a characteristic ivory medallion\non a very soft open rust field with blue spandrels and an ivory border. It is 9x11, circa 1890",
+    "description_raw": "11878\nThis is a great antique Persian Serapi. These rugs also known as an antique Heriz,\nbecause they were woven in the city of Heriz before the transition to busier patterns\nand brighter colors. This rug has a very stately design with a characteristic ivory medallion\non a very soft open rust field with blue spandrels and an ivory border. It is 9x11, circa 1890",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13001",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "India",
+      "label": "Indian"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "11-3x14-5",
+      "width_ft": 11,
+      "width_in": 3,
+      "length_ft": 14,
+      "length_in": 5,
+      "width_decimal": 11.25,
+      "length_decimal": 14.42,
+      "area_sq_ft": 162.2
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "11-3x14-5 ca. 1900 Very unusual and highly decorative early rug from India",
+    "description_raw": "13001\n11-3x14-5 ca. 1900 Very unusual and highly decorative early rug from India",
+    "flags": [
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "13033",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8-9x11-5",
+      "width_ft": 8,
+      "width_in": 9,
+      "length_ft": 11,
+      "length_in": 5,
+      "width_decimal": 8.75,
+      "length_decimal": 11.42,
+      "area_sq_ft": 99.9
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "gold",
+      "red"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "8-9x11-5 ca. 1915 Very rare gold colored background Persian Sarouk",
+    "description_raw": "13033\n8-9x11-5 ca. 1915 Very rare gold colored background Persian Sarouk",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13036",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "9x11-9",
+      "width_ft": 9,
+      "width_in": 0,
+      "length_ft": 11,
+      "length_in": 9,
+      "width_decimal": 9,
+      "length_decimal": 11.75,
+      "area_sq_ft": 105.8
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "red",
+      "salmon"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "9x11-9 ca. 1915 Soft salmon colored background Persian Sarouk",
+    "description_raw": "13036\n9x11-9 ca. 1915 Soft salmon colored background Persian Sarouk",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13064",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "7-4x10-4",
+      "width_ft": 7,
+      "width_in": 4,
+      "length_ft": 10,
+      "length_in": 4,
+      "width_decimal": 7.33,
+      "length_decimal": 10.33,
+      "area_sq_ft": 75.8
+    },
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "7-4x10-4 Antique Persian Heriz",
+    "description_raw": "13064\n7-4x10-4 Antique Persian Heriz",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "13065",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6-2x9",
+      "width_ft": 6,
+      "width_in": 2,
+      "length_ft": 9,
+      "length_in": 0,
+      "width_decimal": 6.17,
+      "length_decimal": 9,
+      "area_sq_ft": 55.5
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "navy",
+      "navy blue",
+      "rust"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "This is a unique Persian Heriz rug with a smaller ivory medallion and an open soft rust field. The field is surrounded by a traditional Heriz border is a navy blue. Circa 1915. Measures 6-2x9",
+    "description_raw": "13065\nThis is a unique Persian Heriz rug with a smaller ivory medallion and an open soft rust field. The field is surrounded by a traditional Heriz border is a navy blue. Circa 1915. Measures 6-2x9",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13066",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8x11-8",
+      "width_ft": 8,
+      "width_in": 0,
+      "length_ft": 11,
+      "length_in": 8,
+      "width_decimal": 8,
+      "length_decimal": 11.67,
+      "area_sq_ft": 93.3
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Heriz 8x11-8\nCa. 1915",
+    "description_raw": "13066\nPersian Heriz 8x11-8\nCa. 1915",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13349",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "9x11-9",
+      "width_ft": 9,
+      "width_in": 0,
+      "length_ft": 11,
+      "length_in": 9,
+      "width_decimal": 9,
+      "length_decimal": 11.75,
+      "area_sq_ft": 105.8
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "gold",
+      "light blue",
+      "navy",
+      "rust",
+      "tan"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": []
+    },
+    "description_clean": "Antique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 9x11-9.",
+    "description_raw": "13349\nAntique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 9x11-9.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14015",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8-6x10-9",
+      "width_ft": 8,
+      "width_in": 6,
+      "length_ft": 10,
+      "length_in": 9,
+      "width_decimal": 8.5,
+      "length_decimal": 10.75,
+      "area_sq_ft": 91.4
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "navy"
+    ],
+    "design": {
+      "motifs": [
+        "vine"
+      ]
+    },
+    "description_clean": "Heriz Persian circa 1915 Classic Heriz motif with bold colors and an uncommon navy border decorated with a stylized running vine. Measures 8-6x10-9",
+    "description_raw": "14015\nHeriz Persian circa 1915 Classic Heriz motif with bold colors and an uncommon navy border decorated with a stylized running vine. Measures 8-6x10-9",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14019",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "9 foot, 1 inches by 11 foot, 3 inches",
+      "width_ft": 9,
+      "width_in": 1,
+      "length_ft": 11,
+      "length_in": 3,
+      "width_decimal": 9.08,
+      "length_decimal": 11.25,
+      "area_sq_ft": 102.2
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "coral",
+      "ivory",
+      "peach"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "This rug is a magnificent antique Persian Serapi, which is a very early Heriz rug. It has a soft coral background with ivory spandrels and a very unusual peach background border. It is from around 1890 and is in very good condition. The size is 9 foot, 1 inches by 11 foot, 3 inches.",
+    "description_raw": "14019\nThis rug is a magnificent antique Persian Serapi, which is a very early Heriz rug. It has a soft coral background with ivory spandrels and a very unusual peach background border. It is from around 1890 and is in very good condition. The size is 9 foot, 1 inches by 11 foot, 3 inches.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14228",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8-8x11-1",
+      "width_ft": 8,
+      "width_in": 8,
+      "length_ft": 11,
+      "length_in": 1,
+      "width_decimal": 8.67,
+      "length_decimal": 11.08,
+      "area_sq_ft": 96.1
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "light blue",
+      "navy",
+      "rose",
+      "rust"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": []
+    },
+    "description_clean": "Great looking Persian antique Heriz with perfect harmony of design and colors rose/rust field with\nlight blue spandrels and a navy border. Classic geometric motif,\ncirca 1915. Room size, 8-8x11-1",
+    "description_raw": "14228\nGreat looking Persian antique Heriz with perfect harmony of design and colors rose/rust field with\nlight blue spandrels and a navy border. Classic geometric motif,\ncirca 1915. Room size, 8-8x11-1",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15079",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Turkey",
+      "label": "Turkish"
+    },
+    "rug_type": "Sivas",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6-5x9-6",
+      "width_ft": 6,
+      "width_in": 5,
+      "length_ft": 9,
+      "length_in": 6,
+      "width_decimal": 6.42,
+      "length_decimal": 9.5,
+      "area_sq_ft": 61
+    },
+    "circa_year": 1950,
+    "circa_decade": "1950s",
+    "era": "vintage",
+    "colors": [
+      "ivory",
+      "peach",
+      "tan"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "This is a vintage (circa 1950) Turkish Sivas. This rug is very tightly woven , very fine.\nIt is unusual because of the soft colors of peach, tans, and ivory. It is 6-5x9-6",
+    "description_raw": "15079\nThis is a vintage (circa 1950) Turkish Sivas. This rug is very tightly woven , very fine.\nIt is unusual because of the soft colors of peach, tans, and ivory. It is 6-5x9-6",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15177",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Sumak",
+    "weave_type": "flatwoven",
+    "dimensions": {
+      "raw": "6-2x12",
+      "width_ft": 6,
+      "width_in": 2,
+      "length_ft": 12,
+      "length_in": 0,
+      "width_decimal": 6.17,
+      "length_decimal": 12,
+      "area_sq_ft": 74
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Caucasian Sumak. This is a strikingly beautiful but rare flatwoven rug known as Sumak. The colors are very decorative. Circa 1890, 6-2x12.",
+    "description_raw": "15177\nCaucasian Sumak. This is a strikingly beautiful but rare flatwoven rug known as Sumak. The colors are very decorative. Circa 1890, 6-2x12.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15189",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Mahal",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8-10x11-10",
+      "width_ft": 8,
+      "width_in": 10,
+      "length_ft": 11,
+      "length_in": 10,
+      "width_decimal": 8.83,
+      "length_decimal": 11.83,
+      "area_sq_ft": 104.5
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "green",
+      "ivory",
+      "tan",
+      "yellow"
+    ],
+    "design": {
+      "layout": "all-over",
+      "motifs": [
+        "vine"
+      ]
+    },
+    "description_clean": "This is a Persian Sultanabad or otherwise known as an early Mahal. Sultanabad’s are known for their all over motif of flowers, vines, and tendrils. This particular rug is very unusual in that it has so many colors; blues, greens, and even yellow. It also has an ivory border so that it has a very light over-all appearance. Circa 1900. 8-10x11-10.",
+    "description_raw": "15189\nThis is a Persian Sultanabad or otherwise known as an early Mahal. Sultanabad’s are known for their all over motif of flowers, vines, and tendrils. This particular rug is very unusual in that it has so many colors; blues, greens, and even yellow. It also has an ivory border so that it has a very light over-all appearance. Circa 1900. 8-10x11-10.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15191",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Khorasan",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "10x13",
+      "width_ft": 10,
+      "width_in": 0,
+      "length_ft": 13,
+      "length_in": 0,
+      "width_decimal": 10,
+      "length_decimal": 13,
+      "area_sq_ft": 130
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "red"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "This is a Persian Khorasan. It is a very uncommon motif with a striking red medallion on a blue field with ivory spandrels and a red border. It is 10x13 and was woven around 1910.",
+    "description_raw": "15191\nThis is a Persian Khorasan. It is a very uncommon motif with a striking red medallion on a blue field with ivory spandrels and a red border. It is 10x13 and was woven around 1910.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15192",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "India",
+      "label": "Indian"
+    },
+    "rug_type": "Amritsar",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "10-3x12-6",
+      "width_ft": 10,
+      "width_in": 3,
+      "length_ft": 12,
+      "length_in": 6,
+      "width_decimal": 10.25,
+      "length_decimal": 12.5,
+      "area_sq_ft": 128.1
+    },
+    "colors": [
+      "ivory",
+      "red",
+      "soft red"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "This is an Indian Amritsar, which is a very rare rug. It shows some wear, but still can be used for a long time. Soft red medallion and border is on an ivory field, which is characteristic of the Ameristar motif. Measures 10-3x12-6",
+    "description_raw": "15192\nThis is an Indian Amritsar, which is a very rare rug. It shows some wear, but still can be used for a long time. Soft red medallion and border is on an ivory field, which is characteristic of the Ameristar motif. Measures 10-3x12-6",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15340",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "5-9x8-9",
+      "width_ft": 5,
+      "width_in": 9,
+      "length_ft": 8,
+      "length_in": 9,
+      "width_decimal": 5.75,
+      "length_decimal": 8.75,
+      "area_sq_ft": 50.3
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "ivory",
+      "navy",
+      "rust"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "Herati"
+      ]
+    },
+    "description_clean": "Persian Serapi, 5-9x8-9. Circa 1900. The rug has characteristic navy medallion on a rust field with ivory spandrels and a rust Herati motif border, however it is very unusual 6x9 size. Very hard to find.",
+    "description_raw": "15340\nPersian Serapi, 5-9x8-9. Circa 1900. The rug has characteristic navy medallion on a rust field with ivory spandrels and a rust Herati motif border, however it is very unusual 6x9 size. Very hard to find.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15428",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Kurdistan",
+      "label": "Kurdish"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6-1x11-2",
+      "width_ft": 6,
+      "width_in": 1,
+      "length_ft": 11,
+      "length_in": 2,
+      "width_decimal": 6.08,
+      "length_decimal": 11.17,
+      "area_sq_ft": 67.9
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "navy",
+      "navy blue"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "Circa 1900, 6-1x11-2, This Kurdish rug from northwest Persia features a striking ivory medallion set against a rich navy-blue field. The border is a colorful floral motif. This rug showcases the distinctive craftsmanship and bold designs characteristic of Kurdish weaving traditions.",
+    "description_raw": "15428\nCirca 1900, 6-1x11-2, This Kurdish rug from northwest Persia features a striking ivory medallion set against a rich navy-blue field. The border is a colorful floral motif. This rug showcases the distinctive craftsmanship and bold designs characteristic of Kurdish weaving traditions.",
+    "flags": [
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15429",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6x10-5",
+      "width_ft": 6,
+      "width_in": 0,
+      "length_ft": 10,
+      "length_in": 5,
+      "width_decimal": 6,
+      "length_decimal": 10.42,
+      "area_sq_ft": 62.5
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "cream",
+      "red"
+    ],
+    "design": {
+      "layout": "floral",
+      "motifs": [
+        "vase",
+        "vine"
+      ]
+    },
+    "description_clean": "Circa 1900, 6x10-5, This Kurdish rug from northwest Persia features a central field with a repeating pattern of elaborate vase motifs, each symmetrically arranged along the central axis. The vases are depicted with intricate floral decorations and vine elements, which add a sense of harmony and natural beauty to the design. The motif is on a soft cream field. The rich red border is adorned with traditional Kurdish designs, adding depth and contrast. The inscription on the rug is in Persian (Farsi) and is likely a signature or a poetic verse.",
+    "description_raw": "15429\nCirca 1900, 6x10-5, This Kurdish rug from northwest Persia features a central field with a repeating pattern of elaborate vase motifs, each symmetrically arranged along the central axis. The vases are depicted with intricate floral decorations and vine elements, which add a sense of harmony and natural beauty to the design. The motif is on a soft cream field. The rich red border is adorned with traditional Kurdish designs, adding depth and contrast. The inscription on the rug is in Persian (Farsi) and is likely a signature or a poetic verse.",
+    "flags": [
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15692",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6-6x9-2",
+      "width_ft": 6,
+      "width_in": 6,
+      "length_ft": 9,
+      "length_in": 2,
+      "width_decimal": 6.5,
+      "length_decimal": 9.17,
+      "area_sq_ft": 59.6
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "gold",
+      "light blue",
+      "navy",
+      "rust",
+      "tan"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": []
+    },
+    "description_clean": "Antique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 6-6x9-2.",
+    "description_raw": "15692\nAntique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 6-6x9-2.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15693",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "6-9x9-3",
+      "width_ft": 6,
+      "width_in": 9,
+      "length_ft": 9,
+      "length_in": 3,
+      "width_decimal": 6.75,
+      "length_decimal": 9.25,
+      "area_sq_ft": 62.4
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Lilyhan, An impressive small rug known as a Lilyhan. These rugs were made in a small village near the town of Sarouk. They are known for their less busy motif, distinct pattern, and very soft wool. It feels like silk. It 6-9x9-3, circa 1915.",
+    "description_raw": "15693\nPersian Lilyhan, An impressive small rug known as a Lilyhan. These rugs were made in a small village near the town of Sarouk. They are known for their less busy motif, distinct pattern, and very soft wool. It feels like silk. It 6-9x9-3, circa 1915.",
+    "flags": [],
+    "style_notes": [
+      "Style: 'Lilyhan' — Lilihan (standard spelling)"
+    ],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15787",
+    "category": "Room Size Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "7-8x11-1",
+      "width_ft": 7,
+      "width_in": 8,
+      "length_ft": 11,
+      "length_in": 1,
+      "width_decimal": 7.67,
+      "length_decimal": 11.08,
+      "area_sq_ft": 85
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "gold",
+      "light blue",
+      "navy",
+      "rust",
+      "tan"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": []
+    },
+    "description_clean": "Antique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 7-8x11-1.",
+    "description_raw": "15787\nAntique Persian Heriz, Geometric Serapi Design, Rust Tan Blue, Wool, Room Size This is a gracious and beautiful Persian Heriz (though lots of dealers would call it a Serapi). The field is rust with light blue spandrels and a wonderful flowers and leaves motif border with navy background. The design also uses lots of beautiful tans and golds. circa 1915. It is 7-8x11-1.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13012",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-10x12-8",
+      "width_ft": 3,
+      "width_in": 10,
+      "length_ft": 12,
+      "length_in": 8,
+      "width_decimal": 3.83,
+      "length_decimal": 12.67,
+      "area_sq_ft": 48.6
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "3-10x12-8 ca. 1915 Unusual Persian Bakshaish from the Heriz district",
+    "description_raw": "13012\n3-10x12-8 ca. 1915 Unusual Persian Bakshaish from the Heriz district",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13156",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Malayer",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2x11-9",
+      "width_ft": 2,
+      "width_in": 0,
+      "length_ft": 11,
+      "length_in": 9,
+      "width_decimal": 2,
+      "length_decimal": 11.75,
+      "area_sq_ft": 23.5
+    },
+    "colors": [
+      "navy"
+    ],
+    "design": {
+      "layout": "all-over",
+      "motifs": []
+    },
+    "description_clean": "Antique Persian Malayer rug with an all-over floral motif on a navy field. Measuring 2x11-9",
+    "description_raw": "13156\nAntique Persian Malayer rug with an all-over floral motif on a navy field. Measuring 2x11-9",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "14187",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2-11x14-5",
+      "width_ft": 2,
+      "width_in": 11,
+      "length_ft": 14,
+      "length_in": 5,
+      "width_decimal": 2.92,
+      "length_decimal": 14.42,
+      "area_sq_ft": 42
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "navy",
+      "red"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "diamond"
+      ]
+    },
+    "description_clean": "Circa 1910, 2-11x14-5, This Persian Karaja runner showcases a series of intricate medallions in rich reds and blues, connected by geometric motifs along a deep navy field. The borders feature a combination of floral and diamond patterns in complementary colors, framed by multiple narrow bands. The detailed designs and earth-toned colors reflect the traditional craftsmanship and style characteristic of early Karaja rugs.",
+    "description_raw": "14187\nCirca 1910, 2-11x14-5, This Persian Karaja runner showcases a series of intricate medallions in rich reds and blues, connected by geometric motifs along a deep navy field. The borders feature a combination of floral and diamond patterns in complementary colors, framed by multiple narrow bands. The detailed designs and earth-toned colors reflect the traditional craftsmanship and style characteristic of early Karaja rugs.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14260",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3x12-10",
+      "width_ft": 3,
+      "width_in": 0,
+      "length_ft": 12,
+      "length_in": 10,
+      "width_decimal": 3,
+      "length_decimal": 12.83,
+      "area_sq_ft": 38.5
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "navy",
+      "navy blue",
+      "rust"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "diamond"
+      ]
+    },
+    "description_clean": ", Circa 1910, 3x12-10, This Persian Karaja runner features an rust field adorned with a series of diamond-shaped medallions, each filled with intricate geometric patterns. The runner is framed by a navy-blue border. The earth-toned colors are classic of the Heriz/Karaja rugs of the early 1900’s.",
+    "description_raw": "14260\n, Circa 1910, 3x12-10, This Persian Karaja runner features an rust field adorned with a series of diamond-shaped medallions, each filled with intricate geometric patterns. The runner is framed by a navy-blue border. The earth-toned colors are classic of the Heriz/Karaja rugs of the early 1900’s.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14807",
+    "category": "Runners",
+    "origin": {},
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-1x13-6",
+      "width_ft": 3,
+      "width_in": 1,
+      "length_ft": 13,
+      "length_in": 6,
+      "width_decimal": 3.08,
+      "length_decimal": 13.5,
+      "area_sq_ft": 41.6
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "ivory",
+      "red"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "This is an early Heriz, but unusual because of the uncluttered motif and the ivory border. Perfect condition. Circa 1910. Size is 3-1x13-6",
+    "description_raw": "14807\nThis is an early Heriz, but unusual because of the uncluttered motif and the ivory border. Perfect condition. Circa 1910. Size is 3-1x13-6",
+    "flags": [
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15179",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-4x13-7",
+      "width_ft": 3,
+      "width_in": 4,
+      "length_ft": 13,
+      "length_in": 7,
+      "width_decimal": 3.33,
+      "length_decimal": 13.58,
+      "area_sq_ft": 45.3
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "navy",
+      "red"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "diamond"
+      ]
+    },
+    "description_clean": "This Persian Karaja runner showcases a series of intricate medallions in rich reds and blues, connected by geometric motifs along a deep navy field. The borders feature a combination of floral and diamond patterns in complementary colors, framed by multiple narrow bands. Circa 1910. Size is 3-4x13-7",
+    "description_raw": "15179\nThis Persian Karaja runner showcases a series of intricate medallions in rich reds and blues, connected by geometric motifs along a deep navy field. The borders feature a combination of floral and diamond patterns in complementary colors, framed by multiple narrow bands. Circa 1910. Size is 3-4x13-7",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15181",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-1x11-7",
+      "width_ft": 3,
+      "width_in": 1,
+      "length_ft": 11,
+      "length_in": 7,
+      "width_decimal": 3.08,
+      "length_decimal": 11.58,
+      "area_sq_ft": 35.7
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "camel"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": []
+    },
+    "description_clean": "This is a really early Persian Karaja rug featuring an intricate geometric design on an unusual camel background color. Circa 1890. Measures 3-1x11-7",
+    "description_raw": "15181\nThis is a really early Persian Karaja rug featuring an intricate geometric design on an unusual camel background color. Circa 1890. Measures 3-1x11-7",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15471",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2-5x8-6",
+      "width_ft": 2,
+      "width_in": 5,
+      "length_ft": 8,
+      "length_in": 6,
+      "width_decimal": 2.42,
+      "length_decimal": 8.5,
+      "area_sq_ft": 20.5
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A very pretty Persian Heriz runner. Circa 1915. Size is 2-5x8-6",
+    "description_raw": "15471\nA very pretty Persian Heriz runner. Circa 1915. Size is 2-5x8-6",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15569",
+    "category": "Runners",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serab",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "8-5x3-5",
+      "width_ft": 8,
+      "width_in": 5,
+      "length_ft": 3,
+      "length_in": 5,
+      "width_decimal": 8.42,
+      "length_decimal": 3.42,
+      "area_sq_ft": 28.8
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "camel",
+      "red"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Serab, circa 1915, 8-5x3-5. Classic Serab motif on a camel-colored field. Great size too!",
+    "description_raw": "15569\nPersian Serab, circa 1915, 8-5x3-5. Classic Serab motif on a camel-colored field. Great size too!",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "10682",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-6x4-2",
+      "width_ft": 3,
+      "width_in": 6,
+      "length_ft": 4,
+      "length_in": 2,
+      "width_decimal": 3.5,
+      "length_decimal": 4.17,
+      "area_sq_ft": 14.6
+    },
+    "circa_year": 1930,
+    "circa_decade": "1930s",
+    "era": "vintage",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Karaja 3-6x4-2 Circa 1930",
+    "description_raw": "10682\nPersian Karaja 3-6x4-2 Circa 1930",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "11296",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Heriz",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-2x3-10",
+      "width_ft": 3,
+      "width_in": 2,
+      "length_ft": 3,
+      "length_in": 10,
+      "width_decimal": 3.17,
+      "length_decimal": 3.83,
+      "area_sq_ft": 12.1
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "coral"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Cute Persian Heriz,\n3-2x3-10, ca. 1915,\ncoral background",
+    "description_raw": "11296\nCute Persian Heriz,\n3-2x3-10, ca. 1915,\ncoral background",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13000",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Malayer",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-7x6-4",
+      "width_ft": 4,
+      "width_in": 7,
+      "length_ft": 6,
+      "length_in": 4,
+      "width_decimal": 4.58,
+      "length_decimal": 6.33,
+      "area_sq_ft": 29
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "4-7x6-4 ca. 1900 Very fine Persian Fereghan from the Malayer district",
+    "description_raw": "13000\n4-7x6-4 ca. 1900 Very fine Persian Fereghan from the Malayer district",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13010",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Malayer",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-3x6-2",
+      "width_ft": 4,
+      "width_in": 3,
+      "length_ft": 6,
+      "length_in": 2,
+      "width_decimal": 4.25,
+      "length_decimal": 6.17,
+      "area_sq_ft": 26.2
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Malayer, 4-3x6-2,\nca. 1910, great rug, lots of character",
+    "description_raw": "13010\nPersian Malayer, 4-3x6-2,\nca. 1910, great rug, lots of character",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13209",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-1x6-2",
+      "width_ft": 4,
+      "width_in": 1,
+      "length_ft": 6,
+      "length_in": 2,
+      "width_decimal": 4.08,
+      "length_decimal": 6.17,
+      "area_sq_ft": 25.2
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Fereghan Sarouk, 4-1x6-2, ca. 1900, very rare",
+    "description_raw": "13209\nPersian Fereghan Sarouk, 4-1x6-2, ca. 1900, very rare",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13382",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Hamadan",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2-7x3-10",
+      "width_ft": 2,
+      "width_in": 7,
+      "length_ft": 3,
+      "length_in": 10,
+      "width_decimal": 2.58,
+      "length_decimal": 3.83,
+      "area_sq_ft": 9.9
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Hamadan 2-7x3-10 Circa 1915",
+    "description_raw": "13382\nPersian Hamadan 2-7x3-10 Circa 1915",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "13451",
+    "category": "Scatter Rugs",
+    "origin": {},
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-10x6-10",
+      "width_ft": 3,
+      "width_in": 10,
+      "length_ft": 6,
+      "length_in": 10,
+      "width_decimal": 3.83,
+      "length_decimal": 6.83,
+      "area_sq_ft": 26.2
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "gold",
+      "ivory"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A special early Kazak with an unusual gold field and wonderful ivory border decorated with flowers\nCa. 1890 … 3-10x6-10",
+    "description_raw": "13451\nA special early Kazak with an unusual gold field and wonderful ivory border decorated with flowers\nCa. 1890 … 3-10x6-10",
+    "flags": [
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "13501",
+    "category": "Scatter Rugs",
+    "origin": {},
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-2x6-8",
+      "width_ft": 4,
+      "width_in": 2,
+      "length_ft": 6,
+      "length_in": 8,
+      "width_decimal": 4.17,
+      "length_decimal": 6.67,
+      "area_sq_ft": 27.8
+    },
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A very early and stunning Fereghan Sarouk. 4-2x6-8",
+    "description_raw": "13501\nA very early and stunning Fereghan Sarouk. 4-2x6-8",
+    "flags": [
+      "Missing circa date — needs manual check",
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "14216",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Shirvan",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4 feet by 5 feet 8 inches",
+      "width_ft": 4,
+      "width_in": 0,
+      "length_ft": 5,
+      "length_in": 8,
+      "width_decimal": 4,
+      "length_decimal": 5.67,
+      "area_sq_ft": 22.7
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "navy"
+    ],
+    "design": {
+      "layout": "all-over",
+      "motifs": [
+        "boteh"
+      ]
+    },
+    "description_clean": "This is a Caucasian Shirvan rug with all-over boteh motif on a navy field. It is circa 1900 and is a scatter size of 4 feet by 5 feet 8 inches.",
+    "description_raw": "14216\nThis is a Caucasian Shirvan rug with all-over boteh motif on a navy field. It is circa 1900 and is a scatter size of 4 feet by 5 feet 8 inches.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14232",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-9x4",
+      "width_ft": 3,
+      "width_in": 9,
+      "length_ft": 4,
+      "length_in": 0,
+      "width_decimal": 3.75,
+      "length_decimal": 4,
+      "area_sq_ft": 15
+    },
+    "colors": [
+      "ivory"
+    ],
+    "design": {
+      "layout": "all-over",
+      "motifs": []
+    },
+    "description_clean": "Antique Persian Sarouk, Very unusual square rug with an all-Over Design on rare ivory field.\n3-9x4",
+    "description_raw": "14232\nAntique Persian Sarouk, Very unusual square rug with an all-Over Design on rare ivory field.\n3-9x4",
+    "flags": [
+      "Missing circa date — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "14286",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-2x5-10",
+      "width_ft": 4,
+      "width_in": 2,
+      "length_ft": 5,
+      "length_in": 10,
+      "width_decimal": 4.17,
+      "length_decimal": 5.83,
+      "area_sq_ft": 24.3
+    },
+    "colors": [
+      "ivory"
+    ],
+    "design": {
+      "layout": "tribal",
+      "motifs": []
+    },
+    "description_clean": "Early north west Persian rug with a tribal motif. The ivory border makes it quite a decorative rug.\n4-2x5-10",
+    "description_raw": "14286\nEarly north west Persian rug with a tribal motif. The ivory border makes it quite a decorative rug.\n4-2x5-10",
+    "flags": [
+      "Missing circa date — needs manual check",
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "14481",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Lilihan",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-7x4-7",
+      "width_ft": 3,
+      "width_in": 7,
+      "length_ft": 4,
+      "length_in": 7,
+      "width_decimal": 3.58,
+      "length_decimal": 4.58,
+      "area_sq_ft": 16.4
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "navy"
+    ],
+    "design": {
+      "layout": "floral",
+      "motifs": []
+    },
+    "description_clean": "Persian Lilyhan, 3-7x4-7, circa 1915. This rug is very beautiful with its simple floral pattern on a navy field. The wool feels like silk.",
+    "description_raw": "14481\nPersian Lilyhan, 3-7x4-7, circa 1915. This rug is very beautiful with its simple floral pattern on a navy field. The wool feels like silk.",
+    "flags": [],
+    "style_notes": [
+      "Style: 'Lilyhan' — Lilihan (standard spelling)"
+    ],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "14837",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Sarouk",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-4x5",
+      "width_ft": 3,
+      "width_in": 4,
+      "length_ft": 5,
+      "length_in": 0,
+      "width_decimal": 3.33,
+      "length_decimal": 5,
+      "area_sq_ft": 16.7
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "navy"
+    ],
+    "design": {
+      "layout": "floral",
+      "motifs": []
+    },
+    "description_clean": "A beautiful Persian Sarouk, circa 1915, 3-4x5. This Navy field Sarouk has a floral pattern that is not busy like most Sarouks.",
+    "description_raw": "14837\nA beautiful Persian Sarouk, circa 1915, 3-4x5. This Navy field Sarouk has a floral pattern that is not busy like most Sarouks.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15154",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "5x7",
+      "width_ft": 5,
+      "width_in": 0,
+      "length_ft": 7,
+      "length_in": 0,
+      "width_decimal": 5,
+      "length_decimal": 7,
+      "area_sq_ft": 35
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "Caucasian Kazak. circa 1900, an early typical three medallion Kazak with a very primitive an open design. Measures 5x7",
+    "description_raw": "15154\nCaucasian Kazak. circa 1900, an early typical three medallion Kazak with a very primitive an open design. Measures 5x7",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15155",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4x7",
+      "width_ft": 4,
+      "width_in": 0,
+      "length_ft": 7,
+      "length_in": 0,
+      "width_decimal": 4,
+      "length_decimal": 7,
+      "area_sq_ft": 28
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "ivory"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "A very extraordinary Persian Malayer with a motif reminiscent to a Persian Serapi. The ivory medallion and ivory border makes this rug very cheerful. Circa 1910. Measures 4x7",
+    "description_raw": "15155\nA very extraordinary Persian Malayer with a motif reminiscent to a Persian Serapi. The ivory medallion and ivory border makes this rug very cheerful. Circa 1910. Measures 4x7",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15205",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian/Luri"
+    },
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "5-7x6-1",
+      "width_ft": 5,
+      "width_in": 7,
+      "length_ft": 6,
+      "length_in": 1,
+      "width_decimal": 5.58,
+      "length_decimal": 6.08,
+      "area_sq_ft": 34
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "green",
+      "ivory"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "Caucasian Kazak, Lori Pombak\nGreat example of a classic Lori Pombak with a typical ivory and green medallion. Circa 1890 Measures 5-7x6-1",
+    "description_raw": "15205\nCaucasian Kazak, Lori Pombak\nGreat example of a classic Lori Pombak with a typical ivory and green medallion. Circa 1890 Measures 5-7x6-1",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15442",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-6x4",
+      "width_ft": 3,
+      "width_in": 6,
+      "length_ft": 4,
+      "length_in": 0,
+      "width_decimal": 3.5,
+      "length_decimal": 4,
+      "area_sq_ft": 14
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "rust",
+      "teal"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": [
+        "Herati"
+      ]
+    },
+    "description_clean": "Circa 1910, 3-6x4, This Persian Karaja rug features an intricate geometric design in teal blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background.",
+    "description_raw": "15442\nCirca 1910, 3-6x4, This Persian Karaja rug features an intricate geometric design in teal blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15448",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-8x6-7",
+      "width_ft": 4,
+      "width_in": 8,
+      "length_ft": 6,
+      "length_in": 7,
+      "width_decimal": 4.67,
+      "length_decimal": 6.58,
+      "area_sq_ft": 30.7
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Caucasian Eagle Kazak, 4-8x6-7, circa 1915",
+    "description_raw": "15448\nCaucasian Eagle Kazak, 4-8x6-7, circa 1915",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15449",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Karagashli",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-8x6-1",
+      "width_ft": 3,
+      "width_in": 8,
+      "length_ft": 6,
+      "length_in": 1,
+      "width_decimal": 3.67,
+      "length_decimal": 6.08,
+      "area_sq_ft": 22.3
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "green",
+      "light blue",
+      "navy",
+      "navy blue",
+      "white"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "diamond"
+      ]
+    },
+    "description_clean": "Circa 1900, 3-8x6-1, This Caucasian Karagashli rug features a striking design with three large diamond-shaped medallions running down the center, each filled with intricate geometric patterns. The background is a deep navy blue, highlighted by intricate motifs in white, green, and light blue. The borders are densely packed with zigzag and floral patterns, framed by a series of smaller, detailed bands. The combination of bold colors and detailed patterns showcases the traditional craftsmanship and distinctive style of Karagashli rugs.",
+    "description_raw": "15449\nCirca 1900, 3-8x6-1, This Caucasian Karagashli rug features a striking design with three large diamond-shaped medallions running down the center, each filled with intricate geometric patterns. The background is a deep navy blue, highlighted by intricate motifs in white, green, and light blue. The borders are densely packed with zigzag and floral patterns, framed by a series of smaller, detailed bands. The combination of bold colors and detailed patterns showcases the traditional craftsmanship and distinctive style of Karagashli rugs.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15473",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Perpedil",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-1x4-4",
+      "width_ft": 3,
+      "width_in": 1,
+      "length_ft": 4,
+      "length_in": 4,
+      "width_decimal": 3.08,
+      "length_decimal": 4.33,
+      "area_sq_ft": 13.4
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "navy",
+      "navy blue"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": [
+        "rams horn"
+      ]
+    },
+    "description_clean": "Circa 1900, 3-1x4-4, This Caucasian Perpedil rug, originating from the Kuba region of the Caucasus, has a classic rams horn motif on a navy-blue field. The rams horn motif, often stylized in various geometric forms, is a symbol of strength. The main border is flanked by several smaller guard borders, each with its own set of geometric patterns.",
+    "description_raw": "15473\nCirca 1900, 3-1x4-4, This Caucasian Perpedil rug, originating from the Kuba region of the Caucasus, has a classic rams horn motif on a navy-blue field. The rams horn motif, often stylized in various geometric forms, is a symbol of strength. The main border is flanked by several smaller guard borders, each with its own set of geometric patterns.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15488",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-8x6",
+      "width_ft": 4,
+      "width_in": 8,
+      "length_ft": 6,
+      "length_in": 0,
+      "width_decimal": 4.67,
+      "length_decimal": 6,
+      "area_sq_ft": 28
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "This is an early Persian Heriz known as a Serapi. It is 4-8x6, circa 1890. Very unusual to find small Serapi rugs,",
+    "description_raw": "15488\nThis is an early Persian Heriz known as a Serapi. It is 4-8x6, circa 1890. Very unusual to find small Serapi rugs,",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15510",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Karaja",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "3-7x4-7",
+      "width_ft": 3,
+      "width_in": 7,
+      "length_ft": 4,
+      "length_in": 7,
+      "width_decimal": 3.58,
+      "length_decimal": 4.58,
+      "area_sq_ft": 16.4
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "rust",
+      "teal"
+    ],
+    "design": {
+      "layout": "geometric",
+      "motifs": [
+        "Herati"
+      ]
+    },
+    "description_clean": "Circa1910, 3-7x4-7, This Persian Karaja rug features an intricate geometric design in teal blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background. blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background.",
+    "description_raw": "15510\nCirca1910, 3-7x4-7, This Persian Karaja rug features an intricate geometric design in teal blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background. blue and ivory. The border complements the central field with a series of geometric and floral elements in the traditional Herati motif on rust background.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15518",
+    "category": "Scatter Rugs",
+    "origin": {},
+    "rug_type": "Mahal",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4x8-9",
+      "width_ft": 4,
+      "width_in": 0,
+      "length_ft": 8,
+      "length_in": 9,
+      "width_decimal": 4,
+      "length_decimal": 8.75,
+      "area_sq_ft": 35
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [
+      "blue",
+      "ivory",
+      "rust",
+      "yellow"
+    ],
+    "design": {
+      "layout": "all-over",
+      "motifs": []
+    },
+    "description_clean": "Circa 1910, 4x8-9, This Mahal rug features an all-over lattice pattern with floral motifs in soft colors of rust, blue, yellow, and ivory. The intricate border showcases geometric designs and a rich combination of earthy tones.",
+    "description_raw": "15518\nCirca 1910, 4x8-9, This Mahal rug features an all-over lattice pattern with floral motifs in soft colors of rust, blue, yellow, and ivory. The intricate border showcases geometric designs and a rich combination of earthy tones.",
+    "flags": [
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15654",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4x8-2",
+      "width_ft": 4,
+      "width_in": 0,
+      "length_ft": 8,
+      "length_in": 2,
+      "width_decimal": 4,
+      "length_decimal": 8.17,
+      "area_sq_ft": 32.7
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "This is an early Caucasian Eagle Kazak from around 1890. It is 4x8-2. Striking rug, great colors!",
+    "description_raw": "15654\nThis is an early Caucasian Eagle Kazak from around 1890. It is 4x8-2. Striking rug, great colors!",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15695",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Isfahan",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-6x6-7",
+      "width_ft": 4,
+      "width_in": 6,
+      "length_ft": 6,
+      "length_in": 7,
+      "width_decimal": 4.5,
+      "length_decimal": 6.58,
+      "area_sq_ft": 29.6
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Persian Isphahan, 4-6x6-7, circa 1910. Great example of an early Isphahan with a very tight weave and wonderful colors.",
+    "description_raw": "15695\nPersian Isphahan, 4-6x6-7, circa 1910. Great example of an early Isphahan with a very tight weave and wonderful colors.",
+    "flags": [],
+    "style_notes": [
+      "Style: 'Isphahan' — Isfahan (modern spelling)"
+    ],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15881",
+    "category": "Scatter Rugs",
+    "origin": {},
+    "rug_type": "Kazak",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "5x9",
+      "width_ft": 5,
+      "width_in": 0,
+      "length_ft": 9,
+      "length_in": 0,
+      "width_decimal": 5,
+      "length_decimal": 9,
+      "area_sq_ft": 45
+    },
+    "circa_year": 1890,
+    "circa_decade": "1890s",
+    "era": "antique",
+    "colors": [
+      "red"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": []
+    },
+    "description_clean": "This is a double medallion Eagle Kazk with the spandrels at either end. The title ;Eagle Kazak is actually referring to rugs from the Chelebred village of the Karabagh region\nof the Caucasus. This rug is almost 5x9, circa 1890, and is in great condition.",
+    "description_raw": "15881\nThis is a double medallion Eagle Kazk with the spandrels at either end. The title ;Eagle Kazak is actually referring to rugs from the Chelebred village of the Karabagh region\nof the Caucasus. This rug is almost 5x9, circa 1890, and is in great condition.",
+    "flags": [
+      "Origin not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": false,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15891",
+    "category": "Scatter Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Serapi",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "4-7x6-7",
+      "width_ft": 4,
+      "width_in": 7,
+      "length_ft": 6,
+      "length_in": 7,
+      "width_decimal": 4.58,
+      "length_decimal": 6.58,
+      "area_sq_ft": 30.2
+    },
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [
+      "ivory",
+      "navy",
+      "rust"
+    ],
+    "design": {
+      "layout": "medallion",
+      "motifs": [
+        "Herati"
+      ]
+    },
+    "description_clean": "This is a great antique Persian Serapi. These rugs are also known as an antique Heriz because they were woven in the city of Heriz before the transition to busier patterns and brighter colors. This rug has a very stately design with a characteristic navy medallion on a rust field with ivory spandrels and a rust Herati motif border. It is rare to find small Serapi rugs, this one being 4-7x6-7 It is circa 1900.",
+    "description_raw": "15891\nThis is a great antique Persian Serapi. These rugs are also known as an antique Heriz because they were woven in the city of Heriz before the transition to busier patterns and brighter colors. This rug has a very stately design with a characteristic navy medallion on a rust field with ivory spandrels and a rust Herati motif border. It is rare to find small Serapi rugs, this one being 4-7x6-7 It is circa 1900.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "10707",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Iran",
+      "label": "Persian"
+    },
+    "rug_type": "Saddle Bag",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "1-6x1-6",
+      "width_ft": 1,
+      "width_in": 6,
+      "length_ft": 1,
+      "length_in": 6,
+      "width_decimal": 1.5,
+      "length_decimal": 1.5,
+      "area_sq_ft": 2.2
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "10707-8\nLuri 1-6x1-6 Ca. 1915 Pair of Persian Luri saddlebag faces in mint condition",
+    "description_raw": "10707-8\nLuri 1-6x1-6 Ca. 1915 Pair of Persian Luri saddlebag faces in mint condition",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "11247",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Central Asia",
+      "label": "Turkoman"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2-6x3-6",
+      "width_ft": 2,
+      "width_in": 6,
+      "length_ft": 3,
+      "length_in": 6,
+      "width_decimal": 2.5,
+      "length_decimal": 3.5,
+      "area_sq_ft": 8.8
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Turkomen Javal Bag 2-6x3-6 ca. 1910 Classic Bokhara design",
+    "description_raw": "11247\nTurkomen Javal Bag 2-6x3-6 ca. 1910 Classic Bokhara design",
+    "flags": [
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "12963",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Kurdistan",
+      "label": "Kurdish"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "1-8x1-9",
+      "width_ft": 1,
+      "width_in": 8,
+      "length_ft": 1,
+      "length_in": 9,
+      "width_decimal": 1.67,
+      "length_decimal": 1.75,
+      "area_sq_ft": 2.9
+    },
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "12963 Kurdish Bagface\n1-8x1-9 Rare Kurdish Bagface",
+    "description_raw": "12963 Kurdish Bagface\n1-8x1-9 Rare Kurdish Bagface",
+    "flags": [
+      "Missing circa date — needs manual check",
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": false,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15161",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Central Asia",
+      "label": "Turkoman"
+    },
+    "rug_type": "Torba",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2x5",
+      "width_ft": 2,
+      "width_in": 0,
+      "length_ft": 5,
+      "length_in": 0,
+      "width_decimal": 2,
+      "length_decimal": 5,
+      "area_sq_ft": 10
+    },
+    "circa_year": 1910,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A great Turkoman Torba bag face, 2x5, circa 1910",
+    "description_raw": "15161\nA great Turkoman Torba bag face, 2x5, circa 1910",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15194",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "China",
+      "label": "Chinese/Peking"
+    },
+    "rug_type": "Picture Rug",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "2-6x6-10",
+      "width_ft": 2,
+      "width_in": 6,
+      "length_ft": 6,
+      "length_in": 10,
+      "width_decimal": 2.5,
+      "length_decimal": 6.83,
+      "area_sq_ft": 17.1
+    },
+    "circa_year": 1920,
+    "circa_decade": "1920s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A Peking picture rug depicting the 8 immortals and 3-star gods. 2-6x6-10, circa 1920.",
+    "description_raw": "15194\nA Peking picture rug depicting the 8 immortals and 3-star gods. 2-6x6-10, circa 1920.",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15195",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "China",
+      "label": "Chinese/Khotan"
+    },
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "1-10x1-11",
+      "width_ft": 1,
+      "width_in": 10,
+      "length_ft": 1,
+      "length_in": 11,
+      "width_decimal": 1.83,
+      "length_decimal": 1.92,
+      "area_sq_ft": 3.5
+    },
+    "circa_year": 1925,
+    "circa_decade": "1920s",
+    "era": "vintage",
+    "colors": [
+      "red",
+      "tan"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "A rare Khotan in far west China. It is 1-10x1-11. Covered with cute little animals. Circa 1925.",
+    "description_raw": "15195\nA rare Khotan in far west China. It is 1-10x1-11. Covered with cute little animals. Circa 1925.",
+    "flags": [
+      "Rug type not identified — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": false,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15461",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Shah Sevan"
+    },
+    "rug_type": "Sumak",
+    "weave_type": "flatwoven/sumak",
+    "circa_year": 1900,
+    "circa_decade": "1900s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Shah Sevan 5-Sided Sumak Mafrash,, Circa 1900",
+    "description_raw": "15461\nShah Sevan 5-Sided Sumak Mafrash,, Circa 1900",
+    "flags": [
+      "Missing dimensions — needs manual check"
+    ],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": false,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "medium"
+    }
+  },
+  {
+    "sku": "15462",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Caucasus",
+      "label": "Caucasian"
+    },
+    "rug_type": "Kuba",
+    "weave_type": "flatwoven",
+    "dimensions": {
+      "raw": "4-4x9-1",
+      "width_ft": 4,
+      "width_in": 4,
+      "length_ft": 9,
+      "length_in": 1,
+      "width_decimal": 4.33,
+      "length_decimal": 9.08,
+      "area_sq_ft": 39.4
+    },
+    "circa_year": 1915,
+    "circa_decade": "1910s",
+    "era": "antique",
+    "colors": [],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Caucasian Kuba Kelim, 4-4x9-1, circa 1915. Wonderful flatwoven rug.",
+    "description_raw": "15462\nCaucasian Kuba Kelim, 4-4x9-1, circa 1915. Wonderful flatwoven rug.",
+    "flags": [],
+    "style_notes": [
+      "Style: 'Kelim' — Kilim (English alt. spelling)"
+    ],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15463",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Afghanistan",
+      "label": "Afghan"
+    },
+    "rug_type": "Salt Bag",
+    "weave_type": "pile",
+    "dimensions": {
+      "raw": "1-6x2-6",
+      "width_ft": 1,
+      "width_in": 6,
+      "length_ft": 2,
+      "length_in": 6,
+      "width_decimal": 1.5,
+      "length_decimal": 2.5,
+      "area_sq_ft": 3.8
+    },
+    "circa_year": 1925,
+    "circa_decade": "1920s",
+    "era": "vintage",
+    "colors": [
+      "tan"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "An Afghanistan salt bag from around 1925. 1-6x2-6",
+    "description_raw": "15463\nAn Afghanistan salt bag from around 1925. 1-6x2-6",
+    "flags": [],
+    "style_notes": [],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  },
+  {
+    "sku": "15465",
+    "category": "Tribal Rugs",
+    "origin": {
+      "country": "Afghanistan",
+      "label": "Afghan"
+    },
+    "rug_type": "Kilim",
+    "weave_type": "flatwoven/kilim",
+    "dimensions": {
+      "raw": "2x4",
+      "width_ft": 2,
+      "width_in": 0,
+      "length_ft": 4,
+      "length_in": 0,
+      "width_decimal": 2,
+      "length_decimal": 4,
+      "area_sq_ft": 8
+    },
+    "circa_year": 1925,
+    "circa_decade": "1920s",
+    "era": "vintage",
+    "colors": [
+      "tan"
+    ],
+    "design": {
+      "motifs": []
+    },
+    "description_clean": "Afghanistan Kelim weave saddle bag. Circa 1925, 2x4",
+    "description_raw": "15465\nAfghanistan Kelim weave saddle bag. Circa 1925, 2x4",
+    "flags": [],
+    "style_notes": [
+      "Style: 'Kelim' — Kilim (English alt. spelling)"
+    ],
+    "data_quality": {
+      "has_sku": true,
+      "has_dimensions": true,
+      "has_circa": true,
+      "has_origin": true,
+      "has_type": true,
+      "confidence": "high"
+    }
+  }
+]
