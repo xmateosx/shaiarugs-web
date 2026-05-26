@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 import RugCard from '@/components/RugCard'
@@ -8,13 +8,21 @@ import { getAllRugs, getCategories, getUniqueOrigins, filterRugs } from '@/lib/r
 
 function CollectionContent() {
   const searchParams = useSearchParams()
-  const initialCategory = searchParams.get('category') ?? ''
+  const urlCategory  = searchParams.get('category') ?? ''
 
-  const [category, setCategory] = useState(initialCategory)
+  const [category, setCategory] = useState(urlCategory)
   const [origin, setOrigin]     = useState('')
   const [era, setEra]           = useState('')
   const [search, setSearch]     = useState('')
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+
+  // Sync category state when the nav link changes the URL param
+  useEffect(() => {
+    setCategory(urlCategory)
+    setOrigin('')
+    setEra('')
+    setSearch('')
+  }, [urlCategory])
 
   const allRugs    = getAllRugs()
   const categories = getCategories()
