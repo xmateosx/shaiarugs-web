@@ -15,11 +15,14 @@ export default function RugImageViewer({ rug, title }: Props) {
   return (
     <>
       <div
-        className="relative aspect-[4/5] rounded-sm overflow-hidden cursor-zoom-in group"
-        style={{ backgroundColor: 'var(--cream-dark)' }}
+        className="framed cursor-zoom-in group"
         onClick={() => rug.image_url && setOpen(true)}
         role={rug.image_url ? 'button' : undefined}
         aria-label={rug.image_url ? 'View fullscreen' : undefined}
+      >
+      <div
+        className="arch relative aspect-[4/5] overflow-hidden"
+        style={{ backgroundColor: 'var(--cream-dark)' }}
       >
         {rug.image_url ? (
           <>
@@ -53,15 +56,7 @@ export default function RugImageViewer({ rug, title }: Props) {
           </div>
         )}
 
-        {/* Era badge */}
-        {rug.era && (
-          <span
-            className="absolute top-4 left-4 text-xs tracking-widest uppercase px-3 py-1"
-            style={{ backgroundColor: 'var(--burgundy)', color: 'var(--gold-light)' }}
-          >
-            {rug.era}
-          </span>
-        )}
+      </div>
       </div>
 
       {open && (

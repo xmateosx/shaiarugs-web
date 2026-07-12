@@ -2,20 +2,17 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: 'var(--burgundy-dk)', color: 'var(--gold-light)' }}>
-      {/* Gold top rule */}
-      <div className="h-px w-full" style={{ backgroundColor: 'var(--gold)', opacity: 0.4 }} />
-
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <footer style={{ backgroundColor: 'var(--cream-dark)', borderTop: '1px solid var(--hairline)' }}>
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
           <h3
-            className="text-2xl italic mb-2 font-[family-name:var(--font-playfair)]"
-            style={{ color: 'var(--gold)' }}
+            className="uppercase mb-3 font-[family-name:var(--font-jost)]"
+            style={{ color: 'var(--brown-dark)', letterSpacing: '0.24em', fontSize: '16px', fontWeight: 350 }}
           >
             Shaia Rugs
           </h3>
-          <p className="text-sm leading-relaxed opacity-80">
+          <p className="text-sm leading-relaxed max-w-sm" style={{ color: 'var(--brown-mid)' }}>
             Family-owned antique oriental rug dealership specializing in rare
             Persian, Caucasian, and tribal rugs. Serving collectors and designers
             since 1973.
@@ -24,10 +21,10 @@ export default function Footer() {
 
         {/* Collection links */}
         <div>
-          <h4 className="text-xs tracking-widest uppercase mb-4" style={{ color: 'var(--gold)' }}>
+          <h4 className="label mb-4" style={{ color: 'var(--gold)' }}>
             Collection
           </h4>
-          <ul className="space-y-2 text-sm opacity-80">
+          <ul className="space-y-2 text-sm">
             {[
               ['Scatter Rugs', '/collection?category=Scatter+Rugs'],
               ['Room Size Rugs', '/collection?category=Room+Size+Rugs'],
@@ -37,7 +34,11 @@ export default function Footer() {
               ['European & Textiles', '/collection?category=European+%26+Textiles'],
             ].map(([label, href]) => (
               <li key={href}>
-                <Link href={href} className="hover:text-gold transition-colors">
+                <Link
+                  href={href}
+                  className="transition-colors hover:text-brown-dark"
+                  style={{ color: 'var(--brown-mid)' }}
+                >
                   {label}
                 </Link>
               </li>
@@ -47,20 +48,20 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="text-xs tracking-widest uppercase mb-4" style={{ color: 'var(--gold)' }}>
+          <h4 className="label mb-4" style={{ color: 'var(--gold)' }}>
             Contact
           </h4>
-          <address className="not-italic text-sm opacity-80 space-y-1 leading-relaxed">
+          <address className="not-italic text-sm space-y-1 leading-relaxed" style={{ color: 'var(--brown-mid)' }}>
             <p>Frank Shaia</p>
             <p>5560 Foundation St</p>
             <p>Williamsburg, VA 23188</p>
             <p className="pt-2">
-              <a href="tel:7572200400" className="hover:opacity-100 transition-opacity">
+              <a href="tel:7572200400" className="transition-colors hover:text-brown-dark">
                 (757) 220-0400
               </a>
             </p>
             <p>
-              <a href="mailto:info@shaiarugs.com" className="hover:opacity-100 transition-opacity">
+              <a href="mailto:info@shaiarugs.com" className="transition-colors hover:text-brown-dark">
                 info@shaiarugs.com
               </a>
             </p>
@@ -70,8 +71,8 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div
-        className="border-t text-center text-xs py-4 opacity-50 tracking-wide"
-        style={{ borderColor: 'var(--gold)', opacity: 0.5 }}
+        className="label text-center py-4"
+        style={{ borderTop: '1px solid var(--hairline)', color: 'var(--brown-mid)', opacity: 0.7 }}
       >
         &copy; {new Date().getFullYear()} Shaia Rugs &mdash; All Rights Reserved
       </div>

@@ -1,200 +1,201 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import RugCard from '@/components/RugCard'
-import { getFeaturedRugs, getCategories, getCategorySlug } from '@/lib/rugs'
-
-const categoryDescriptions: Record<string, string> = {
-  'Scatter Rugs':         'Intimate pieces, 3×5 to 5×8. Perfect for entry halls, sitting rooms, and beside beds.',
-  'Room Size Rugs':       'Commanding room-defining pieces, typically 6×9 to 9×12.',
-  'Runners':              'Elegant long-format rugs ideal for hallways and staircases.',
-  'Oversize Rugs':        'Grand statement pieces for large rooms and grand halls.',
-  'Tribal Rugs':          'Raw, expressive pieces woven by nomadic and village tribes.',
-  'European & Textiles':  'Aubusson tapestries, needlepoints, and fine European weavings.',
-}
+import { getAllRugs, getCategories, getRugsByCategory, getRugById, formatDimensions } from '@/lib/rugs'
 
 export default function HomePage() {
-  const featured = getFeaturedRugs()
   const categories = getCategories()
+  const totalCount = getAllRugs().length
+
+  // Representative image + count per category
+  const tiles = categories.map(cat => {
+    const inCat = getRugsByCategory(cat)
+    const withImage = inCat.find(r => r.image_url)
+    return { cat, count: inCat.length, image: withImage?.image_url ?? null }
+  })
+
+  // Featured lot — the antique Serapi (falls back to first high-confidence rug)
+  const featured =
+    getRugById('15891') ??
+    getAllRugs().find(r => r.image_url && r.data_quality.confidence === 'high')
 
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────── */}
-      <section className="relative flex items-center justify-center text-center px-4 overflow-hidden"
-        style={{ minHeight: '92vh' }}
-      >
-        {/* Booth photo background */}
-        <Image
-          src="/images/hero/booth.jpg"
-          alt="Frank Shaia's antique rug booth"
-          fill
-          priority
-          className="object-cover object-center"
-          unoptimized
-        />
-
-        {/* Deep layered overlay — dark at edges, lighter in centre so rugs glow through */}
-        <div className="absolute inset-0"
-          style={{
-            background: 'radial-gradient(ellipse 80% 70% at 50% 50%, rgba(18,6,0,0.35) 0%, rgba(18,6,0,0.72) 100%)',
-          }}
-        />
-        {/* Bottom fade into page */}
-        <div className="absolute inset-x-0 bottom-0 h-32"
-          style={{ background: 'linear-gradient(to bottom, transparent, var(--cream))' }}
-        />
-
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl mx-auto py-32">
-          <p className="text-xs tracking-[0.4em] uppercase mb-5"
-            style={{ color: 'var(--gold)', textShadow: '0 1px 8px rgba(0,0,0,0.6)' }}>
-            Williamsburg, Virginia · Est. 1973
-          </p>
-
-          <h1
-            className="text-5xl md:text-7xl mb-6 leading-tight font-[family-name:var(--font-playfair)]"
-            style={{ color: 'var(--cream)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
-          >
-            Antique Oriental Rugs<br />
-            <em className="not-italic" style={{ color: 'var(--gold)' }}>of Distinction</em>
-          </h1>
-
-          <div className="ornament my-7 max-w-xs mx-auto" style={{ '--tw-ornament-color': 'var(--gold-light)' } as React.CSSProperties}>
-            <span style={{ color: 'var(--gold)' }}>✦</span>
-          </div>
-
-          <p className="text-base md:text-xl leading-relaxed mb-12 max-w-xl mx-auto"
-            style={{ color: 'var(--gold-light)', textShadow: '0 1px 12px rgba(0,0,0,0.7)' }}>
-            For over fifty years, Frank Shaia has assembled one of Virginia&apos;s finest
-            collections of antique Persian, Caucasian, and tribal rugs —
-            each piece a living work of art.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/collection"
-              className="px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200 hover:opacity-90"
-              style={{ backgroundColor: 'var(--gold)', color: 'var(--brown-dark)' }}
-            >
-              View Collection
-            </Link>
-            <Link
-              href="/about"
-              className="px-10 py-4 text-sm tracking-widest uppercase border-2 transition-all duration-200 hover:bg-white/10 backdrop-blur-sm"
-              style={{ borderColor: 'var(--gold-light)', color: 'var(--gold-light)' }}
-            >
-              Our Story
-            </Link>
-          </div>
-        </div>
-
-        {/* Scroll hint */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
-          <span className="text-[10px] tracking-[0.3em] uppercase" style={{ color: 'var(--gold-light)' }}>Scroll</span>
-          <div className="w-px h-8" style={{ background: 'linear-gradient(to bottom, var(--gold), transparent)' }} />
-        </div>
-      </section>
-
-      {/* ── Featured Rugs ──────────────────────────────────── */}
-      {featured.length > 0 && (
-        <section className="py-20 px-4 max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--gold)' }}>
-              From the Collection
+      <section className="max-w-7xl mx-auto px-5 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-10 md:gap-14 items-center py-14 md:py-20">
+          <div>
+            <p className="label flex items-center gap-3" style={{ color: 'var(--gold)' }}>
+              <span className="inline-block w-11 h-px" style={{ backgroundColor: 'var(--gold)' }} />
+              Quality Antique Oriental Rugs Since 1973
             </p>
-            <h2
-              className="text-3xl md:text-4xl font-[family-name:var(--font-playfair)]"
-              style={{ color: 'var(--burgundy)' }}
+            <h1
+              className="text-4xl md:text-6xl leading-[1.06] mt-5 mb-5 font-[family-name:var(--font-playfair)]"
+              style={{ color: 'var(--brown-dark)', textWrap: 'balance' }}
             >
-              Featured Pieces
-            </h2>
-            <div className="ornament mt-4 max-w-xs mx-auto">
-              <span style={{ color: 'var(--gold)' }}>✦</span>
+              A dealer&rsquo;s collection, numbered one rug at a time.
+            </h1>
+            <p className="text-lg leading-relaxed mb-8 max-w-xl" style={{ color: 'var(--brown-mid)' }}>
+              Persian, Caucasian, tribal, and European pieces, hand-picked by
+              Frank Shaia over fifty years on the show circuit. Every rug
+              photographed, measured, and catalogued.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/collection"
+                className="label px-8 py-4 transition-all duration-200 hover:brightness-110"
+                style={{ backgroundColor: 'var(--burgundy)', color: 'var(--madder-ink)' }}
+              >
+                Browse the Collection
+              </Link>
+              <Link
+                href="/about"
+                className="label px-8 py-4 border transition-colors duration-200 hover:border-[var(--gold)]"
+                style={{ borderColor: 'var(--hairline)', color: 'var(--brown-dark)' }}
+              >
+                Visit Us in Williamsburg
+              </Link>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-            {featured.map(rug => (
-              <RugCard key={rug.sku} rug={rug} />
-            ))}
-          </div>
+          <figure className="m-0 hidden sm:block">
+            <div className="framed">
+              <div className="arch relative aspect-[4/3]">
+                <Image
+                  src="/images/hero/booth.jpg"
+                  alt="The Shaia Rugs booth, hung floor to ceiling with antique rugs"
+                  fill
+                  priority
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </div>
+            <figcaption className="label text-center mt-4" style={{ color: 'var(--brown-mid)' }}>
+              The Shaia booth &mdash; on the show circuit
+            </figcaption>
+          </figure>
+        </div>
 
-          <div className="text-center mt-12">
-            <Link
-              href="/collection"
-              className="inline-block px-10 py-3 text-sm tracking-widest uppercase border transition-all duration-200 hover:opacity-80"
-              style={{ borderColor: 'var(--burgundy)', color: 'var(--burgundy)' }}
-            >
-              View All 78 Rugs
+        <div className="ornament max-w-lg mx-auto" role="presentation">
+          <span style={{ fontSize: '17px' }}>&#10086;</span>
+        </div>
+
+        {/* ── Category tiles ─────────────────────────────────── */}
+        <div className="flex items-baseline justify-between gap-5 flex-wrap pt-10 pb-7">
+          <h2 className="text-3xl md:text-[32px] font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
+            The Collection
+          </h2>
+          <span className="label" style={{ color: 'var(--brown-mid)' }}>
+            {totalCount} pieces &middot; six categories
+          </span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-9 pb-16">
+          {tiles.map(({ cat, count, image }) => (
+            <Link key={cat} href={`/collection?category=${encodeURIComponent(cat)}`} className="group block rug-card">
+              <div
+                className="arch-soft relative aspect-[4/3] overflow-hidden"
+                style={{ backgroundColor: 'var(--cream-dark)' }}
+              >
+                {image && (
+                  <Image
+                    src={image}
+                    alt={cat}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                    unoptimized
+                  />
+                )}
+              </div>
+              <div
+                className="flex items-baseline justify-between gap-3 pt-3.5 pb-3.5 px-0.5"
+                style={{ borderBottom: '1px solid var(--hairline)' }}
+              >
+                <span className="text-xl font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
+                  {cat}
+                </span>
+                <span className="label" style={{ color: 'var(--brown-mid)' }}>
+                  {count} piece{count !== 1 ? 's' : ''}
+                </span>
+              </div>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Featured lot ───────────────────────────────────── */}
+      {featured && (
+        <section style={{ backgroundColor: 'var(--cream-dark)' }}>
+          <div className="max-w-7xl mx-auto px-5 md:px-8 py-16 grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-10 md:gap-14 items-center">
+            <figure className="m-0">
+              {featured.image_url && (
+                <div className="framed">
+                  <div className="arch relative aspect-[4/5]">
+                    <Image
+                      src={featured.image_url}
+                      alt={[featured.origin.label, featured.rug_type].filter(Boolean).join(' ')}
+                      fill
+                      className="object-cover"
+                      unoptimized
+                    />
+                  </div>
+                </div>
+              )}
+            </figure>
+            <div>
+              <p className="label flex items-center gap-3" style={{ color: 'var(--gold)' }}>
+                <span className="inline-block w-11 h-px" style={{ backgroundColor: 'var(--gold)' }} />
+                From the Catalog
+              </p>
+              <h3 className="text-3xl md:text-4xl leading-tight mt-4 mb-3 font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
+                {[featured.origin.label, featured.rug_type].filter(Boolean).join(' ')}{' '}
+                {featured.sku && (
+                  <span className="italic text-lg align-middle" style={{ color: 'var(--burgundy)' }}>
+                    &#8470;&nbsp;{featured.sku}
+                  </span>
+                )}
+              </h3>
+              <p className="italic mb-5" style={{ color: 'var(--brown-mid)' }}>
+                {formatDimensions(featured)}
+                {featured.circa_year ? ` · circa ${featured.circa_year}` : ''}
+                {featured.era ? ` · ${featured.era}` : ''}
+              </p>
+              {featured.description_clean && (
+                <p className="leading-relaxed mb-8 max-w-xl" style={{ color: 'var(--brown-mid)' }}>
+                  &ldquo;{featured.description_clean}&rdquo;
+                </p>
+              )}
+              <Link
+                href={`/collection/${featured.id ?? featured.sku}`}
+                className="label inline-block px-8 py-4 transition-all duration-200 hover:brightness-110"
+                style={{ backgroundColor: 'var(--burgundy)', color: 'var(--madder-ink)' }}
+              >
+                View This Lot
+              </Link>
+            </div>
           </div>
         </section>
       )}
 
-      {/* ── Category Browser ───────────────────────────────── */}
-      <section className="py-20 px-4" style={{ backgroundColor: 'var(--cream-dark)' }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--gold)' }}>
-              Browse by Type
-            </p>
-            <h2
-              className="text-3xl md:text-4xl font-[family-name:var(--font-playfair)]"
-              style={{ color: 'var(--burgundy)' }}
-            >
-              The Collection
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map(cat => (
-              <Link
-                key={cat}
-                href={`/collection?category=${encodeURIComponent(cat)}`}
-                className="group p-6 border transition-all duration-200 hover:shadow-lg"
-                style={{ backgroundColor: 'var(--cream)', borderColor: 'var(--border)' }}
-              >
-                <h3
-                  className="text-lg mb-2 font-[family-name:var(--font-playfair)] group-hover:text-burgundy transition-colors"
-                  style={{ color: 'var(--burgundy-dk)' }}
-                >
-                  {cat}
-                </h3>
-                <p className="text-sm leading-relaxed opacity-70" style={{ color: 'var(--brown-mid)' }}>
-                  {categoryDescriptions[cat]}
-                </p>
-                <p
-                  className="text-xs tracking-widest uppercase mt-4 group-hover:opacity-100 opacity-50 transition-opacity"
-                  style={{ color: 'var(--gold)' }}
-                >
-                  Browse →
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── About Strip ────────────────────────────────────── */}
-      <section className="py-20 px-4 max-w-3xl mx-auto text-center">
-        <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: 'var(--gold)' }}>
+      {/* ── About strip ────────────────────────────────────── */}
+      <section className="py-20 px-5 max-w-2xl mx-auto text-center">
+        <p className="label mb-4" style={{ color: 'var(--gold)' }}>
           Est. 1973
         </p>
-        <h2
-          className="text-3xl md:text-4xl mb-6 font-[family-name:var(--font-playfair)]"
-          style={{ color: 'var(--burgundy)' }}
-        >
+        <h2 className="text-3xl md:text-4xl mb-6 font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
           Fifty Years of Expertise
         </h2>
-        <p className="text-base leading-relaxed opacity-80 mb-8" style={{ color: 'var(--brown-mid)' }}>
-          Frank Shaia has spent a lifetime studying, collecting, and dealing in antique
-          oriental rugs. Every piece in the collection has been personally selected for
-          its quality, rarity, and beauty. We invite serious collectors and first-time
-          buyers alike to explore the collection.
+        <p className="leading-relaxed mb-8" style={{ color: 'var(--brown-mid)' }}>
+          Frank Shaia has spent a lifetime studying, collecting, and dealing in
+          antique oriental rugs. Every piece in the collection has been
+          personally selected for its quality, rarity, and beauty. We invite
+          serious collectors and first-time buyers alike to explore the
+          collection.
         </p>
         <Link
           href="/about"
-          className="text-sm tracking-widest uppercase border-b pb-0.5 transition-colors duration-200"
-          style={{ borderColor: 'var(--gold)', color: 'var(--burgundy)' }}
+          className="label border-b pb-1 transition-colors duration-200 hover:border-[var(--gold)]"
+          style={{ borderColor: 'var(--hairline)', color: 'var(--burgundy)' }}
         >
           Read Our Story
         </Link>

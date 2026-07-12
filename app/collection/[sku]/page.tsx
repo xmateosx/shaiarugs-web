@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-function DetailRow({ label, value }: { label: string; value: string | null | undefined }) {
+function SpecRow({ label, value }: { label: string; value: string | null | undefined }) {
   if (!value) return null
   return (
-    <div className="flex justify-between py-3 border-b" style={{ borderColor: 'var(--border)' }}>
-      <dt className="text-xs tracking-widest uppercase" style={{ color: 'var(--brown-mid)', opacity: 0.7 }}>{label}</dt>
-      <dd className="text-sm font-medium capitalize" style={{ color: 'var(--brown-dark)' }}>{value}</dd>
+    <div className="flex justify-between items-baseline py-2.5" style={{ borderTop: '1px solid var(--hairline)' }}>
+      <dt className="label" style={{ color: 'var(--brown-mid)', fontSize: '10.5px' }}>{label}</dt>
+      <dd className="text-sm capitalize" style={{ color: 'var(--brown-dark)', fontVariantNumeric: 'tabular-nums' }}>{value}</dd>
     </div>
   )
 }
@@ -44,100 +44,92 @@ export default async function RugDetailPage({ params }: Props) {
   const dims  = formatDimensions(rug)
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto px-5 md:px-8 py-10">
       {/* Breadcrumb */}
-      <nav className="text-xs tracking-wide mb-8 flex gap-2 items-center" style={{ color: 'var(--brown-mid)' }}>
-        <Link href="/" className="hover:text-burgundy transition-colors">Home</Link>
-        <span style={{ color: 'var(--gold)' }}>›</span>
-        <Link href="/collection" className="hover:text-burgundy transition-colors">Collection</Link>
-        <span style={{ color: 'var(--gold)' }}>›</span>
-        <Link href={`/collection?category=${encodeURIComponent(rug.category)}`} className="hover:text-burgundy transition-colors">
+      <nav className="label mb-8 flex gap-2 items-center flex-wrap" style={{ color: 'var(--brown-mid)' }}>
+        <Link href="/" className="hover:text-brown-dark transition-colors">Home</Link>
+        <span style={{ color: 'var(--gold)' }}>/</span>
+        <Link href="/collection" className="hover:text-brown-dark transition-colors">Collection</Link>
+        <span style={{ color: 'var(--gold)' }}>/</span>
+        <Link href={`/collection?category=${encodeURIComponent(rug.category)}`} className="hover:text-brown-dark transition-colors">
           {rug.category}
         </Link>
         {rug.sku && <>
-          <span style={{ color: 'var(--gold)' }}>›</span>
-          <span style={{ color: 'var(--brown-dark)' }}>#{rug.sku}</span>
+          <span style={{ color: 'var(--gold)' }}>/</span>
+          <span style={{ color: 'var(--brown-dark)' }}>&#8470; {rug.sku}</span>
         </>}
       </nav>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-10 md:gap-14 items-start">
         <RugImageViewer rug={rug} title={title} />
 
-        <div>
-          {rug.sku && (
-            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: 'var(--gold)' }}>
-              Inventory #{rug.sku}
-            </p>
-          )}
+        {/* Plaque */}
+        <div style={{ borderTop: '3px double var(--gold)', paddingTop: '22px' }}>
+          <div className="flex items-baseline gap-3.5">
+            {rug.sku && (
+              <span className="italic text-xl font-[family-name:var(--font-playfair)]" style={{ color: 'var(--burgundy)' }}>
+                &#8470; {rug.sku}
+              </span>
+            )}
+            {rug.era && <span className="era-chip">{rug.era}</span>}
+          </div>
 
           <h1
-            className="text-3xl md:text-4xl leading-tight mb-2 font-[family-name:var(--font-playfair)]"
-            style={{ color: 'var(--burgundy-dk)' }}
+            className="text-3xl md:text-[40px] leading-[1.1] mt-2.5 mb-2 font-[family-name:var(--font-playfair)]"
+            style={{ color: 'var(--brown-dark)' }}
           >
             {title}
           </h1>
 
-          <p className="text-lg mb-6" style={{ color: 'var(--brown-mid)' }}>
-            {dims}{rug.circa_year ? ` · c. ${rug.circa_year}` : ''}
+          <p className="italic text-lg mb-5" style={{ color: 'var(--brown-mid)' }}>
+            {dims}{rug.circa_year ? ` · circa ${rug.circa_year}` : ''}
           </p>
 
-          <div className="ornament mb-6 max-w-full">
-            <span style={{ color: 'var(--gold)' }}>✦</span>
-          </div>
-
           {rug.description_clean && (
-            <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--brown-mid)' }}>
+            <p className="leading-relaxed mb-7" style={{ color: 'var(--brown-mid)' }}>
               {rug.description_clean}
             </p>
           )}
 
-          <dl>
-            <DetailRow label="Category"   value={rug.category} />
-            <DetailRow label="Origin"     value={rug.origin.label} />
-            <DetailRow label="Country"    value={rug.origin.country} />
-            <DetailRow label="Type"       value={rug.rug_type} />
-            <DetailRow label="Weave"      value={rug.weave_type} />
-            <DetailRow label="Dimensions" value={dims} />
-            <DetailRow label="Area"       value={rug.dimensions ? `${rug.dimensions.area_sq_ft} sq ft` : null} />
-            <DetailRow label="Circa"      value={rug.circa_year ? `${rug.circa_year}` : null} />
-            <DetailRow label="Decade"     value={rug.circa_decade ?? null} />
-            <DetailRow label="Era"        value={rug.era ?? null} />
+          <div className="ornament mb-5" role="presentation">
+            <span style={{ fontSize: '15px' }}>&#10086;</span>
+          </div>
+
+          <dl className="mb-8" style={{ borderBottom: '1px solid var(--hairline)' }}>
+            <SpecRow label="Category"   value={rug.category} />
+            <SpecRow label="Origin"     value={rug.origin.label} />
+            <SpecRow label="Country"    value={rug.origin.country} />
+            <SpecRow label="Type"       value={rug.rug_type} />
+            <SpecRow label="Weave"      value={rug.weave_type} />
+            <SpecRow label="Dimensions" value={dims} />
+            <SpecRow label="Area"       value={rug.dimensions ? `${rug.dimensions.area_sq_ft} sq ft` : null} />
+            <SpecRow label="Circa"      value={rug.circa_year ? `${rug.circa_year}` : null} />
+            <SpecRow label="Era"        value={rug.era ?? null} />
+            {rug.colors.length > 0 && (
+              <SpecRow label="Colors" value={rug.colors.slice(0, 5).join(', ')} />
+            )}
           </dl>
 
-          {rug.colors.length > 0 && (
-            <div className="mt-4">
-              <dt className="text-xs tracking-widest uppercase mb-2" style={{ color: 'var(--brown-mid)', opacity: 0.7 }}>
-                Colors
-              </dt>
-              <dd className="flex flex-wrap gap-2">
-                {rug.colors.map(c => (
-                  <span key={c} className="text-xs px-2 py-1 rounded-sm capitalize"
-                    style={{ backgroundColor: 'var(--cream-dark)', color: 'var(--brown-mid)', border: '1px solid var(--border)' }}>
-                    {c}
-                  </span>
-                ))}
-              </dd>
-            </div>
-          )}
-
-          <div className="mt-10 p-6 rounded-sm" style={{ backgroundColor: 'var(--cream-dark)', border: '1px solid var(--border)' }}>
-            <p className="text-sm mb-3" style={{ color: 'var(--brown-mid)' }}>
-              Interested in this piece? Contact Frank directly for pricing and availability.
-            </p>
-            <a
-              href={`mailto:info@shaiarugs.com?subject=Inquiry: ${title}${rug.sku ? ` (SKU ${rug.sku})` : ''}`}
-              className="inline-block px-6 py-3 text-sm tracking-widest uppercase transition-opacity hover:opacity-80"
-              style={{ backgroundColor: 'var(--burgundy)', color: 'var(--gold-light)' }}
-            >
-              Inquire About This Rug
-            </a>
-          </div>
+          <a
+            href={`mailto:info@shaiarugs.com?subject=Inquiry: ${title}${rug.sku ? ` (No. ${rug.sku})` : ''}`}
+            className="label inline-block px-8 py-4 transition-all duration-200 hover:brightness-110"
+            style={{ backgroundColor: 'var(--burgundy)', color: 'var(--madder-ink)' }}
+          >
+            Inquire About This Piece
+          </a>
+          <p className="italic text-sm mt-4" style={{ color: 'var(--brown-mid)' }}>
+            Interested? Contact Frank directly for pricing and availability
+            &mdash; <a href="tel:7572200400" className="underline decoration-[var(--hairline)] underline-offset-2">(757) 220-0400</a>
+          </p>
         </div>
       </div>
 
-      <div className="mt-12 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
-        <Link href={`/collection?category=${encodeURIComponent(rug.category)}`}
-          className="text-sm tracking-widest uppercase" style={{ color: 'var(--burgundy)' }}>
+      <div className="mt-14 pt-7" style={{ borderTop: '1px solid var(--hairline)' }}>
+        <Link
+          href={`/collection?category=${encodeURIComponent(rug.category)}`}
+          className="label"
+          style={{ color: 'var(--burgundy)' }}
+        >
           ← Back to {rug.category}
         </Link>
       </div>

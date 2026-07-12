@@ -17,7 +17,7 @@ export default function RugCard({ rug, onZoom }: Props) {
     <Link href={href} className="group block rug-card">
       {/* Image */}
       <div
-        className="relative aspect-[4/5] overflow-hidden rounded-sm mb-3"
+        className="relative aspect-[4/5] overflow-hidden"
         style={{ backgroundColor: 'var(--cream-dark)' }}
       >
         {rug.image_url ? (
@@ -27,7 +27,7 @@ export default function RugCard({ rug, onZoom }: Props) {
               alt={title}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-cover"
               unoptimized
             />
             {/* Expand / zoom button */}
@@ -35,8 +35,8 @@ export default function RugCard({ rug, onZoom }: Props) {
               <button
                 onClick={e => { e.preventDefault(); e.stopPropagation(); onZoom() }}
                 aria-label="View fullscreen"
-                className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center rounded-sm opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ backgroundColor: 'rgba(18,6,0,0.55)', color: 'var(--gold-light)' }}
+                className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ backgroundColor: 'rgba(36,31,24,0.55)', color: 'var(--gold-light)' }}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M9 1h4v4M5 13H1V9M14 1l-5 5M1 13l5-5"/>
@@ -47,56 +47,32 @@ export default function RugCard({ rug, onZoom }: Props) {
         ) : (
           /* Elegant placeholder */
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4">
-            <div className="text-4xl opacity-20" style={{ color: 'var(--burgundy)' }}>✦</div>
-            <p
-              className="text-center text-xs tracking-widest uppercase opacity-40"
-              style={{ color: 'var(--brown-mid)' }}
-            >
+            <div className="text-4xl opacity-20" style={{ color: 'var(--burgundy)' }}>&#10086;</div>
+            <p className="label text-center opacity-40" style={{ color: 'var(--brown-mid)' }}>
               {rug.category}
             </p>
           </div>
         )}
-
-        {/* Era badge */}
-        {rug.era && (
-          <span
-            className="absolute top-2 left-2 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm"
-            style={{ backgroundColor: 'var(--burgundy)', color: 'var(--gold-light)', opacity: 0.92 }}
-          >
-            {rug.era}
-          </span>
-        )}
-
-        {/* SKU */}
-        {rug.sku && (
-          <span
-            className="absolute bottom-2 right-2 text-[10px] tracking-wider opacity-60 px-1.5 py-0.5 rounded-sm"
-            style={{ backgroundColor: 'var(--brown-dark)', color: 'var(--gold-light)' }}
-          >
-            #{rug.sku}
-          </span>
-        )}
       </div>
 
-      {/* Info */}
-      <div className="space-y-1 px-0.5">
+      {/* Plaque caption */}
+      <div className="pt-3 px-0.5">
+        <div className="flex items-baseline justify-between gap-2">
+          <span className="label" style={{ color: 'var(--brown-mid)', fontSize: '10px' }}>
+            {rug.sku ? <>&#8470; {rug.sku}</> : 'Unnumbered'}
+            {rug.origin.label ? ` · ${rug.origin.label}` : ''}
+          </span>
+          {rug.era && <span className="era-chip shrink-0">{rug.era}</span>}
+        </div>
         <h3
-          className="font-[family-name:var(--font-playfair)] text-base leading-snug group-hover:text-burgundy transition-colors"
+          className="text-[19px] leading-snug mt-1 font-[family-name:var(--font-playfair)] transition-colors group-hover:text-burgundy"
           style={{ color: 'var(--brown-dark)' }}
         >
           {title}
         </h3>
-
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--brown-mid)' }}>
-          <span>{dims}</span>
-          {rug.circa_year && <span>c. {rug.circa_year}</span>}
-        </div>
-
-        {rug.colors.length > 0 && (
-          <p className="text-xs opacity-60 truncate" style={{ color: 'var(--brown-mid)' }}>
-            {rug.colors.slice(0, 4).join(', ')}
-          </p>
-        )}
+        <p className="text-[13.5px] italic" style={{ color: 'var(--brown-mid)' }}>
+          {dims}{rug.circa_year ? ` · c. ${rug.circa_year}` : ''}
+        </p>
       </div>
     </Link>
   )

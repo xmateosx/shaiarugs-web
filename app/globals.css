@@ -1,15 +1,24 @@
 @import "tailwindcss";
 
+/* ── Ivory Gallery palette — drawn from antique rug dyes ──────────
+   aged-ivory ground, oxidized-wool ink, deep madder accent,
+   antique indigo secondary, muted brass hairlines                  */
 :root {
-  --cream:       #F5F0E8;
-  --cream-dark:  #EDE5D8;
-  --burgundy:    #7A1E2E;
-  --burgundy-dk: #5C1522;
-  --gold:        #C9A84C;
-  --gold-light:  #E8D5A3;
-  --brown-dark:  #1C0A00;
-  --brown-mid:   #5C3D2E;
-  --border:      #D4C5B0;
+  --cream:       #F2EDE2;  /* aged ivory ground */
+  --cream-dark:  #E9E2D1;  /* panel */
+  --burgundy:    #722B29;  /* deep madder — primary accent */
+  --burgundy-dk: #5A2320;
+  --gold:        #9C7E45;  /* muted brass — rules & labels */
+  --gold-light:  #D8C89F;
+  --brown-dark:  #241F18;  /* ink */
+  --brown-mid:   #5C5344;  /* soft ink */
+  --border:      #CFC3AC;
+  --hairline:    rgba(60, 48, 30, 0.28);
+  --indigo:      #33415A;  /* antique indigo — era chips */
+  --frame:       #2A241B;
+  --mat:         #FAF7EF;
+  --madder-ink:  #FFFDF7;
+  --shadow:      0 18px 40px -18px rgba(40, 30, 15, 0.35);
 }
 
 @theme inline {
@@ -22,6 +31,7 @@
   --color-brown-dark:  var(--brown-dark);
   --color-brown-mid:   var(--brown-mid);
   --color-border:      var(--border);
+  --color-indigo:      var(--indigo);
 }
 
 * {
@@ -31,19 +41,28 @@
 body {
   background-color: var(--cream);
   color: var(--brown-dark);
-  font-family: 'Lato', Georgia, sans-serif;
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 500;
 }
 
-/* Gold divider ornament */
+/* Small-caps utility label */
+.label {
+  font-family: var(--font-jost), 'Segoe UI', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Fleuron divider — floral ornament between fading rules */
 .ornament {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.1rem;
   color: var(--gold);
 }
 .ornament::before,
@@ -51,16 +70,55 @@ h1, h2, h3, h4, h5 {
   content: '';
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  background: linear-gradient(to right, transparent, var(--hairline), transparent);
+}
+
+/* Gallery frame — image hung like a canvas, with mat */
+.framed {
+  background: var(--mat);
+  border: 1px solid var(--frame);
+  outline: 6px solid var(--frame);
+  outline-offset: 6px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  margin: 12px;
+}
+
+/* Mihrab arch — gentle Persian-arch top */
+.arch,
+.arch > img,
+.arch > span {
+  border-radius: 46% 46% 0 0 / 17% 17% 0 0;
+  overflow: hidden;
+}
+.arch-soft,
+.arch-soft > img {
+  border-radius: 50% 50% 0 0 / 12% 12% 0 0;
+  overflow: hidden;
 }
 
 /* Rug card hover */
-.rug-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.rug-card img {
+  transition: transform 0.5s ease;
 }
-.rug-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(28, 10, 0, 0.15);
+.rug-card:hover img {
+  transform: scale(1.045);
+}
+@media (prefers-reduced-motion: reduce) {
+  .rug-card img { transition: none; }
+}
+
+/* Era chip — antique indigo outline pill */
+.era-chip {
+  font-family: var(--font-jost), 'Segoe UI', sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  border: 1px solid currentColor;
+  padding: 2px 8px;
+  border-radius: 999px;
+  opacity: 0.85;
 }
 
 /* Scrollbar */

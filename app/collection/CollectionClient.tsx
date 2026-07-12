@@ -35,74 +35,66 @@ export default function CollectionClient({ initialRugs }: Props) {
     [initialRugs, category, origin, era, search]
   )
 
-  const selectStyle = {
-    backgroundColor: 'var(--cream)',
-    borderColor: 'var(--border)',
+  const filterStyle: React.CSSProperties = {
+    backgroundColor: 'transparent',
+    border: 'none',
+    borderBottom: '1px solid var(--hairline)',
     color: 'var(--brown-dark)',
+    fontFamily: 'var(--font-jost), sans-serif',
+    fontSize: '12px',
+    letterSpacing: '0.08em',
+    textTransform: 'uppercase',
+    paddingBottom: '6px',
+    outline: 'none',
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <div className="text-center mb-10">
-        <p className="text-xs tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--gold)' }}>
-          {filtered.length} Piece{filtered.length !== 1 ? 's' : ''}
-        </p>
-        <h1
-          className="text-4xl font-[family-name:var(--font-playfair)]"
-          style={{ color: 'var(--burgundy)' }}
-        >
-          {category || 'The Full Collection'}
+    <div className="max-w-7xl mx-auto px-5 md:px-8 py-12">
+      {/* Heading */}
+      <div className="flex items-baseline justify-between gap-5 flex-wrap mb-6">
+        <h1 className="text-4xl font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
+          {category || 'The Collection'}
         </h1>
-        <div className="ornament mt-4 max-w-xs mx-auto">
-          <span style={{ color: 'var(--gold)' }}>✦</span>
-        </div>
+        <span className="label" style={{ color: 'var(--brown-mid)' }}>
+          {filtered.length} piece{filtered.length !== 1 ? 's' : ''}
+        </span>
       </div>
 
-      <div
-        className="flex flex-col sm:flex-row gap-3 mb-10 p-4 rounded-sm"
-        style={{ backgroundColor: 'var(--cream-dark)', border: '1px solid var(--border)' }}
-      >
-        <input
-          type="text"
-          placeholder="Search rugs…"
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          className="flex-1 px-4 py-2 text-sm border rounded-sm outline-none focus:border-gold"
-          style={selectStyle}
-        />
-        <select
-          value={category}
-          onChange={e => setCategory(e.target.value)}
-          className="px-3 py-2 text-sm border rounded-sm"
-          style={selectStyle}
-        >
+      {/* Filters — quiet underline row */}
+      <div className="flex flex-wrap items-end gap-x-7 gap-y-4 pb-9">
+        <select value={category} onChange={e => setCategory(e.target.value)} style={filterStyle} aria-label="Category">
           <option value="">All Categories</option>
           {categories.map(c => <option key={c} value={c}>{c}</option>)}
         </select>
-        <select
-          value={origin}
-          onChange={e => setOrigin(e.target.value)}
-          className="px-3 py-2 text-sm border rounded-sm"
-          style={selectStyle}
-        >
+        <select value={origin} onChange={e => setOrigin(e.target.value)} style={filterStyle} aria-label="Origin">
           <option value="">All Origins</option>
           {origins.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
-        <select
-          value={era}
-          onChange={e => setEra(e.target.value)}
-          className="px-3 py-2 text-sm border rounded-sm"
-          style={selectStyle}
-        >
+        <select value={era} onChange={e => setEra(e.target.value)} style={filterStyle} aria-label="Era">
           <option value="">All Eras</option>
           <option value="antique">Antique (pre-1920)</option>
           <option value="vintage">Vintage (1920–1970)</option>
           <option value="modern">Modern</option>
         </select>
+        <input
+          type="text"
+          placeholder="Search the catalog…"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          className="flex-1 min-w-[180px]"
+          style={{
+            ...filterStyle,
+            fontFamily: 'Georgia, serif',
+            fontStyle: 'italic',
+            textTransform: 'none',
+            letterSpacing: 'normal',
+            fontSize: '14px',
+          }}
+        />
         {(category || origin || era || search) && (
           <button
             onClick={() => { setCategory(''); setOrigin(''); setEra(''); setSearch('') }}
-            className="px-4 py-2 text-xs tracking-widest uppercase transition-opacity hover:opacity-70"
+            className="label transition-opacity hover:opacity-70 pb-1.5"
             style={{ color: 'var(--burgundy)' }}
           >
             Clear
@@ -112,19 +104,19 @@ export default function CollectionClient({ initialRugs }: Props) {
 
       {filtered.length === 0 ? (
         <div className="text-center py-24">
-          <p className="text-2xl mb-3 font-[family-name:var(--font-playfair)]" style={{ color: 'var(--burgundy)' }}>
+          <p className="text-2xl mb-3 font-[family-name:var(--font-playfair)]" style={{ color: 'var(--brown-dark)' }}>
             No rugs match your filters
           </p>
           <button
             onClick={() => { setCategory(''); setOrigin(''); setEra(''); setSearch('') }}
-            className="text-sm tracking-widest uppercase"
-            style={{ color: 'var(--gold)' }}
+            className="label"
+            style={{ color: 'var(--burgundy)' }}
           >
             Clear all filters
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
           {filtered.map((rug, i) => (
             <RugCard
               key={rug.sku ?? rug.description_raw?.slice(0, 20)}

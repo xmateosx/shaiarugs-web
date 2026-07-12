@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Lato } from 'next/font/google'
+import { Playfair_Display, Jost } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import FloralField from '@/components/FloralField'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -10,10 +11,10 @@ const playfair = Playfair_Display({
   display: 'swap',
 })
 
-const lato = Lato({
+const jost = Jost({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
-  variable: '--font-lato',
+  weight: ['300', '400', '500'],
+  variable: '--font-jost',
   display: 'swap',
 })
 
@@ -36,11 +37,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
-      <body className="min-h-screen flex flex-col bg-cream font-[family-name:var(--font-lato)]">
-        <Nav />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="en" className={`${playfair.variable} ${jost.variable}`}>
+      <body className="min-h-screen flex flex-col bg-cream">
+        <FloralField />
+        <div className="relative z-10 min-h-screen flex flex-col">
+          <Nav />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )

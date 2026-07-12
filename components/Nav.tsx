@@ -17,40 +17,31 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header style={{ backgroundColor: 'var(--burgundy-dk)' }}>
-      {/* Top bar */}
-      <div
-        className="text-center py-1.5 text-xs tracking-widest uppercase"
-        style={{ backgroundColor: 'var(--burgundy)', color: 'var(--gold-light)' }}
-      >
-        Quality Antique Oriental Rugs Since 1973 &mdash; Williamsburg, Virginia
-      </div>
-
-      {/* Main nav */}
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
-        {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none">
+    <header style={{ borderBottom: '1px solid var(--hairline)' }}>
+      <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-baseline justify-between gap-6 pt-6 pb-5 flex-wrap">
+        {/* Wordmark */}
+        <Link href="/" className="flex flex-col leading-tight">
           <span
-            className="text-2xl md:text-3xl font-[family-name:var(--font-playfair)] italic"
-            style={{ color: 'var(--gold)' }}
+            className="text-[21px] md:text-[23px] uppercase font-[family-name:var(--font-jost)]"
+            style={{ color: 'var(--brown-dark)', letterSpacing: '0.24em', fontWeight: 350 }}
           >
             Shaia Rugs
           </span>
-          <span className="text-xs tracking-widest uppercase" style={{ color: 'var(--gold-light)', opacity: 0.7 }}>
-            Est. 1973
+          <span className="label mt-1" style={{ color: 'var(--gold)' }}>
+            Est. 1973 · Williamsburg, Virginia
           </span>
         </Link>
 
         {/* Desktop links */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-baseline gap-6">
           {links.map(l => (
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm tracking-wide uppercase transition-colors duration-200"
-              style={{ color: 'var(--gold-light)' }}
-              onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--gold)')}
-              onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--gold-light)')}
+              className="label pb-1 border-b border-transparent transition-colors duration-200 hover:border-[var(--gold)]"
+              style={{ color: 'var(--brown-mid)', fontSize: '11.5px' }}
+              onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--brown-dark)')}
+              onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--brown-mid)')}
             >
               {l.label}
             </Link>
@@ -59,15 +50,15 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-1"
+          className="lg:hidden flex flex-col gap-1.5 p-1"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
           {[0, 1, 2].map(i => (
             <span
               key={i}
-              className="block w-6 h-0.5 transition-all duration-200"
-              style={{ backgroundColor: 'var(--gold)' }}
+              className="block w-6 h-px transition-all duration-200"
+              style={{ backgroundColor: 'var(--brown-dark)' }}
             />
           ))}
         </button>
@@ -76,15 +67,15 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <nav
-          className="md:hidden border-t px-4 py-4 flex flex-col gap-3"
-          style={{ borderColor: 'var(--burgundy)', backgroundColor: 'var(--burgundy-dk)' }}
+          className="lg:hidden px-5 py-4 flex flex-col gap-3"
+          style={{ borderTop: '1px solid var(--hairline)' }}
         >
           {links.map(l => (
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm tracking-wide uppercase py-1"
-              style={{ color: 'var(--gold-light)' }}
+              className="label py-1"
+              style={{ color: 'var(--brown-mid)' }}
               onClick={() => setOpen(false)}
             >
               {l.label}
