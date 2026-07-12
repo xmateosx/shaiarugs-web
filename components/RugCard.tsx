@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function RugCard({ rug, onZoom }: Props) {
-  const href = rug.sku ? `/collection/${rug.sku}` : '#'
+  const href = rug.id ? `/collection/${rug.id}` : (rug.sku ? `/collection/${rug.sku}` : '#')
   const title = [rug.origin.label, rug.rug_type].filter(Boolean).join(' ') || rug.category
   const dims = formatDimensions(rug)
 

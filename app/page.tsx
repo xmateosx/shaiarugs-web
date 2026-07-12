@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import RugCard from '@/components/RugCard'
 import { getFeaturedRugs, getCategories, getCategorySlug } from '@/lib/rugs'
 
@@ -18,32 +19,51 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────── */}
-      <section
-        className="relative py-24 md:py-36 text-center px-4"
-        style={{ backgroundColor: 'var(--burgundy-dk)' }}
+      <section className="relative flex items-center justify-center text-center px-4 overflow-hidden"
+        style={{ minHeight: '92vh' }}
       >
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-5"
-          style={{ backgroundImage: 'repeating-linear-gradient(45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px' }}
+        {/* Booth photo background */}
+        <Image
+          src="/images/hero/booth.jpg"
+          alt="Frank Shaia's antique rug booth"
+          fill
+          priority
+          className="object-cover object-center"
+          unoptimized
         />
 
-        <div className="relative max-w-3xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'var(--gold)' }}>
-            Williamsburg, Virginia
+        {/* Deep layered overlay — dark at edges, lighter in centre so rugs glow through */}
+        <div className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse 80% 70% at 50% 50%, rgba(18,6,0,0.35) 0%, rgba(18,6,0,0.72) 100%)',
+          }}
+        />
+        {/* Bottom fade into page */}
+        <div className="absolute inset-x-0 bottom-0 h-32"
+          style={{ background: 'linear-gradient(to bottom, transparent, var(--cream))' }}
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl mx-auto py-32">
+          <p className="text-xs tracking-[0.4em] uppercase mb-5"
+            style={{ color: 'var(--gold)', textShadow: '0 1px 8px rgba(0,0,0,0.6)' }}>
+            Williamsburg, Virginia · Est. 1973
           </p>
+
           <h1
-            className="text-4xl md:text-6xl mb-6 leading-tight font-[family-name:var(--font-playfair)]"
-            style={{ color: 'var(--cream)' }}
+            className="text-5xl md:text-7xl mb-6 leading-tight font-[family-name:var(--font-playfair)]"
+            style={{ color: 'var(--cream)', textShadow: '0 2px 24px rgba(0,0,0,0.7)' }}
           >
             Antique Oriental Rugs<br />
             <em className="not-italic" style={{ color: 'var(--gold)' }}>of Distinction</em>
           </h1>
 
-          <div className="ornament my-6 max-w-sm mx-auto">
-            <span className="text-sm italic" style={{ color: 'var(--gold)' }}>✦</span>
+          <div className="ornament my-7 max-w-xs mx-auto" style={{ '--tw-ornament-color': 'var(--gold-light)' } as React.CSSProperties}>
+            <span style={{ color: 'var(--gold)' }}>✦</span>
           </div>
 
-          <p className="text-base md:text-lg leading-relaxed mb-10 opacity-80" style={{ color: 'var(--cream)' }}>
+          <p className="text-base md:text-xl leading-relaxed mb-12 max-w-xl mx-auto"
+            style={{ color: 'var(--gold-light)', textShadow: '0 1px 12px rgba(0,0,0,0.7)' }}>
             For over fifty years, Frank Shaia has assembled one of Virginia&apos;s finest
             collections of antique Persian, Caucasian, and tribal rugs —
             each piece a living work of art.
@@ -52,19 +72,25 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/collection"
-              className="px-8 py-3 text-sm tracking-widest uppercase font-medium transition-colors duration-200"
+              className="px-10 py-4 text-sm tracking-widest uppercase font-medium transition-all duration-200 hover:opacity-90"
               style={{ backgroundColor: 'var(--gold)', color: 'var(--brown-dark)' }}
             >
               View Collection
             </Link>
             <Link
               href="/about"
-              className="px-8 py-3 text-sm tracking-widest uppercase border transition-colors duration-200"
-              style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }}
+              className="px-10 py-4 text-sm tracking-widest uppercase border-2 transition-all duration-200 hover:bg-white/10 backdrop-blur-sm"
+              style={{ borderColor: 'var(--gold-light)', color: 'var(--gold-light)' }}
             >
               Our Story
             </Link>
           </div>
+        </div>
+
+        {/* Scroll hint */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
+          <span className="text-[10px] tracking-[0.3em] uppercase" style={{ color: 'var(--gold-light)' }}>Scroll</span>
+          <div className="w-px h-8" style={{ background: 'linear-gradient(to bottom, var(--gold), transparent)' }} />
         </div>
       </section>
 

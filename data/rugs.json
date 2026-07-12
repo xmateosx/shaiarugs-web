@@ -37,7 +37,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_3a8041291c2f44d3811bafc1a71218df.jpg",
+    "id": "e32dd1_3a8041291c2f44d3811bafc1a71218df"
   },
   {
     "sku": "12754",
@@ -77,7 +78,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_b6dd2cae7c3e4089a937155ab59e4366.jpg",
+    "id": "e32dd1_b6dd2cae7c3e4089a937155ab59e4366"
   },
   {
     "sku": "9051",
@@ -117,7 +119,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_58f50b9aa2f14e0c9aad2fd6f32c421c.jpg",
+    "id": "e32dd1_58f50b9aa2f14e0c9aad2fd6f32c421c"
   },
   {
     "sku": "11243",
@@ -289,7 +292,8 @@
       "has_type": true,
       "confidence": "medium"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_0edfc2d03be7483f850bdd3678721356.jpg",
+    "id": "e32dd1_0edfc2d03be7483f850bdd3678721356"
   },
   {
     "sku": "13463",
@@ -332,7 +336,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_31864344dc29413a9b939b683021b733.jpg",
+    "id": "e32dd1_31864344dc29413a9b939b683021b733"
   },
   {
     "sku": "15519",
@@ -380,7 +385,8 @@
       "has_type": true,
       "confidence": "medium"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_e50927a5b25449b88a9d97d41e40dd53.jpg",
+    "id": "e32dd1_e50927a5b25449b88a9d97d41e40dd53"
   },
   {
     "sku": "6272",
@@ -420,7 +426,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_c6558ea99b0b42ad83ba638bce83b7ae.jpg",
+    "id": "e32dd1_c6558ea99b0b42ad83ba638bce83b7ae"
   },
   {
     "sku": "11878",
@@ -2990,7 +2997,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_7e0ed04c7de54ac8b9ccebdde98c1920.jpg",
+    "id": "e32dd1_7e0ed04c7de54ac8b9ccebdde98c1920"
   },
   {
     "sku": "11247",
@@ -3110,7 +3118,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_135bc20a81d7467cad0e7b836b6ab02a.jpg",
+    "id": "e32dd1_135bc20a81d7467cad0e7b836b6ab02a"
   },
   {
     "sku": "15194",
@@ -3150,7 +3159,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_8a13321b209d4c9fbadaed19d7da2fc9.jpg",
+    "id": "e32dd1_8a13321b209d4c9fbadaed19d7da2fc9"
   },
   {
     "sku": "15195",
@@ -3194,7 +3204,8 @@
       "has_type": false,
       "confidence": "medium"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_7ca3c03338fd424ca9699cd18a091884.jpg",
+    "id": "e32dd1_7ca3c03338fd424ca9699cd18a091884"
   },
   {
     "sku": "15461",
@@ -3268,7 +3279,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_bfc3e407100c41d889a0fdcfec2a3720.jpg",
+    "id": "e32dd1_bfc3e407100c41d889a0fdcfec2a3720"
   },
   {
     "sku": "15463",
@@ -3310,7 +3322,8 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_8fdd55d9ab3a4f2382848f24619d3545.jpg",
+    "id": "e32dd1_8fdd55d9ab3a4f2382848f24619d3545"
   },
   {
     "sku": "15465",
@@ -3354,6 +3367,7 @@
       "has_type": true,
       "confidence": "high"
     },
-    "image_url": null
+    "image_url": "/images/rugs/e32dd1_7ecf45ed479843a5a6f922f2e1ec9bf0.jpg",
+    "id": "e32dd1_7ecf45ed479843a5a6f922f2e1ec9bf0"
   }
 ]

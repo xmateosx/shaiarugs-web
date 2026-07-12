@@ -12,8 +12,13 @@ export function getAllRugs(): Rug[] {
   })
 }
 
+export function getRugById(id: string): Rug | undefined {
+  return rugs.find(r => r.id === id || r.sku === id)
+}
+
+// Keep for backward compat
 export function getRugBySku(sku: string): Rug | undefined {
-  return rugs.find(r => r.sku === sku)
+  return getRugById(sku)
 }
 
 export function getRugsByCategory(category: Category): Rug[] {

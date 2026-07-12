@@ -1,4 +1,5 @@
 export interface Rug {
+  id: string        // Wix image hash — always present, used as primary key
   sku: string | null
   category: string
   origin: {
