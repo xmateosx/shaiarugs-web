@@ -9,6 +9,7 @@ const links = [
   { href: '/collection?category=Runners', label: 'Runners' },
   { href: '/collection?category=Oversize+Rugs', label: 'Oversize' },
   { href: '/collection?category=Tribal+Rugs', label: 'Tribal' },
+  { href: '/collection?category=European+%26+Textiles', label: 'European & Textiles' },
   { href: '/about', label: 'About' },
 ]
 

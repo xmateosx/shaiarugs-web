@@ -56,9 +56,14 @@ npm run build      # production build
 Rug data was scraped from the original Wix site and cleaned via a
 .NET pipeline (`ShaiaDescriptions` → `ShaiaClean`) into structured JSON.
 
-**Image URLs** — the `image_url` field is currently `null` on all records.
-An image mapper script will populate these from the Wix CDN, then
-images will be migrated to permanent storage.
+**Image URLs** — every record's `image_url` points to a local file in
+`public/images/rugs/` (Wix media hash, `~mv2` suffix stripped). The data is
+reconciled against the live Wix site's gallery pages by
+`scripts/reconcile-live.mjs`, which matches each live image+caption pair to a
+record by SKU (fuzzy description match as fallback), creates records for
+items missing from the data, and downloads/resizes any missing image files.
+Records created this way carry the flag "Imported from live site — review in
+admin".
 
 ---
 
