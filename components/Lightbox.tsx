@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Rug } from '@/lib/types'
 import { formatDimensions } from '@/lib/rugs'
+import useZoomPan from '@/lib/useZoomPan'
 
 interface Props {
   rugs: Rug[]
@@ -16,6 +17,11 @@ export default function Lightbox({ rugs, index, onClose, onChange }: Props) {
   const rug     = rugs[index]
   const hasPrev = index > 0
   const hasNext = index < rugs.length - 1
+
+  const { containerRef, scale, gesturing, contentStyle, handlers, reset } = useZoomPan()
+
+  // Zoom always starts fresh on prev/next navigation
+  useEffect(() => { reset() }, [index, reset])
 
   const handleKey = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape')                onClose()
@@ -44,18 +50,31 @@ export default function Lightbox({ rugs, index, onClose, onChange }: Props) {
       onClick={onClose}
     >
 
-      {/* ── Full-viewport image ─────────────────────────────────────── */}
+      {/* ── Full-viewport image — click/wheel zoom, drag pan, pinch ── */}
       {rug.image_url && (
-        <Image
-          key={rug.sku}
-          src={rug.image_url}
-          alt={title}
-          fill
-          className="object-contain"
-          unoptimized
-          priority
+        <div
+          ref={containerRef}
+          className="absolute inset-0 overflow-hidden"
+          style={{
+            touchAction: 'none',
+            cursor: scale > 1 ? (gesturing ? 'grabbing' : 'grab') : 'zoom-in',
+          }}
           onClick={e => e.stopPropagation()}
-        />
+          {...handlers}
+        >
+          <div className="absolute inset-0" style={contentStyle}>
+            <Image
+              key={rug.sku}
+              src={rug.image_url}
+              alt={title}
+              fill
+              className="object-contain"
+              unoptimized
+              priority
+              draggable={false}
+            />
+          </div>
+        </div>
       )}
 
       {/* ── Close button — top right ────────────────────────────────── */}

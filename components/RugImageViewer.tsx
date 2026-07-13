@@ -1,8 +1,10 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Lightbox from './Lightbox'
 import type { Rug } from '@/lib/types'
+
+const HOVER_ZOOM_SCALE = 2.5
 
 interface Props {
   rug: Rug
@@ -11,6 +13,34 @@ interface Props {
 
 export default function RugImageViewer({ rug, title }: Props) {
   const [open, setOpen] = useState(false)
+  const [hoverZoomEnabled, setHoverZoomEnabled] = useState(false)
+  const [zoomed, setZoomed] = useState(false)
+  const zoomWrapRef = useRef<HTMLDivElement>(null)
+
+  // Hover zoom only for precise hover pointers, and never under reduced motion
+  useEffect(() => {
+    const fine = window.matchMedia('(hover: hover) and (pointer: fine)')
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const update = () => setHoverZoomEnabled(fine.matches && !reduced.matches)
+    update()
+    fine.addEventListener('change', update)
+    reduced.addEventListener('change', update)
+    return () => {
+      fine.removeEventListener('change', update)
+      reduced.removeEventListener('change', update)
+    }
+  }, [])
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!hoverZoomEnabled || !zoomWrapRef.current) return
+    const rect = e.currentTarget.getBoundingClientRect()
+    const ox = Math.min(100, Math.max(0, ((e.clientX - rect.left) / rect.width) * 100))
+    const oy = Math.min(100, Math.max(0, ((e.clientY - rect.top) / rect.height) * 100))
+    // Written directly to the element: transform-origin must update instantly
+    // (its jumps ARE the pan) and per-mousemove re-renders aren't needed
+    zoomWrapRef.current.style.transformOrigin = `${ox}% ${oy}%`
+    if (!zoomed) setZoomed(true)
+  }
 
   return (
     <>
@@ -23,17 +53,32 @@ export default function RugImageViewer({ rug, title }: Props) {
       <div
         className="arch relative aspect-[4/5] overflow-hidden"
         style={{ backgroundColor: 'var(--cream-dark)' }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setZoomed(false)}
       >
         {rug.image_url ? (
           <>
-            <Image
-              src={rug.image_url}
-              alt={title}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-              priority
-              unoptimized
-            />
+            {/* Wrapper (not the img) is transformed: `.arch > img` carries the
+                arch radius, so scaling the img itself would scale its rounded
+                corners and expose background while panning */}
+            <div
+              ref={zoomWrapRef}
+              className="absolute inset-0 will-change-transform"
+              style={{
+                transform: zoomed ? `scale(${HOVER_ZOOM_SCALE})` : 'scale(1)',
+                transition: 'transform 250ms ease',
+              }}
+            >
+              <Image
+                src={rug.image_url}
+                alt={title}
+                fill
+                className="object-cover"
+                priority
+                unoptimized
+                draggable={false}
+              />
+            </div>
             {/* Expand hint — bottom right on hover */}
             <div className="absolute inset-0 flex items-end justify-end p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
               <div
