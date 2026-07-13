@@ -6,6 +6,11 @@ interface View { s: number; x: number; y: number }
 interface Options {
   clickScale?: number
   maxScale?: number
+  /** Called for a clean tap at rest (1x) with coords in px from the container
+      center; return false when the tap missed the content so onTapOutside
+      fires instead of zooming in. */
+  isTapOnContent?: (x: number, y: number, rect: DOMRect) => boolean
+  onTapOutside?: () => void
 }
 
 const IDENTITY: View = { s: 1, x: 0, y: 0 }
@@ -19,7 +24,7 @@ const IDENTITY: View = { s: 1, x: 0, y: 0 }
  * to the element being transformed — the wrapper must stay untransformed so
  * pointer coordinates map to a stable rect.
  */
-export default function useZoomPan({ clickScale = 1.75, maxScale = 4 }: Options = {}) {
+export default function useZoomPan({ clickScale = 1.75, maxScale = 4, isTapOnContent, onTapOutside }: Options = {}) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const [view, setViewState] = useState<View>(IDENTITY)
   const [gesturing, setGesturing] = useState(false)
@@ -138,12 +143,25 @@ export default function useZoomPan({ clickScale = 1.75, maxScale = 4 }: Options 
     } else if (pointers.current.size === 0) {
       setGesturing(false)
       if (!canceled && drag.current.moved < 6) {
-        // Clean click/tap: toggle between fit and clickScale toward the point
-        if (viewRef.current.s > 1.01) setView(IDENTITY, true)
-        else zoomToward(e.clientX, e.clientY, clickScale, true)
+        // Clean click/tap: zoomed -> reset; at rest -> zoom in, unless the
+        // tap missed the content (letterbox), which is a close gesture
+        if (viewRef.current.s > 1.01) {
+          setView(IDENTITY, true)
+        } else {
+          const rect = containerRef.current?.getBoundingClientRect()
+          if (rect && isTapOnContent && onTapOutside) {
+            const px = e.clientX - rect.left - rect.width / 2
+            const py = e.clientY - rect.top - rect.height / 2
+            if (!isTapOnContent(px, py, rect)) {
+              onTapOutside()
+              return
+            }
+          }
+          zoomToward(e.clientX, e.clientY, clickScale, true)
+        }
       }
     }
-  }, [clickScale, setView, zoomToward])
+  }, [clickScale, setView, zoomToward, isTapOnContent, onTapOutside])
 
   const onPointerUp = useCallback((e: ReactPointerEvent) => endPointer(e, false), [endPointer])
   const onPointerCancel = useCallback((e: ReactPointerEvent) => endPointer(e, true), [endPointer])

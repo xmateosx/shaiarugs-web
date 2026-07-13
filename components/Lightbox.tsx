@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useCallback } from 'react'
+import { useEffect, useCallback, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Rug } from '@/lib/types'
@@ -18,7 +18,19 @@ export default function Lightbox({ rugs, index, onClose, onChange }: Props) {
   const hasPrev = index > 0
   const hasNext = index < rugs.length - 1
 
-  const { containerRef, scale, gesturing, contentStyle, handlers, reset } = useZoomPan()
+  const imgRef = useRef<HTMLImageElement>(null)
+
+  const { containerRef, scale, gesturing, contentStyle, handlers, reset } = useZoomPan({
+    // The object-contain img element spans the whole viewport; the photo
+    // itself occupies a centered fit rect. Taps on the letterbox close.
+    isTapOnContent: (x, y, rect) => {
+      const img = imgRef.current
+      if (!img || !img.naturalWidth) return true
+      const fit = Math.min(rect.width / img.naturalWidth, rect.height / img.naturalHeight)
+      return Math.abs(x) <= (img.naturalWidth * fit) / 2 && Math.abs(y) <= (img.naturalHeight * fit) / 2
+    },
+    onTapOutside: onClose,
+  })
 
   // Zoom always starts fresh on prev/next navigation
   useEffect(() => { reset() }, [index, reset])
@@ -65,6 +77,7 @@ export default function Lightbox({ rugs, index, onClose, onChange }: Props) {
           <div className="absolute inset-0" style={contentStyle}>
             <Image
               key={rug.sku}
+              ref={imgRef}
               src={rug.image_url}
               alt={title}
               fill
