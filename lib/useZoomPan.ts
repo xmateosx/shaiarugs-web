@@ -19,7 +19,7 @@ const IDENTITY: View = { s: 1, x: 0, y: 0 }
  * to the element being transformed — the wrapper must stay untransformed so
  * pointer coordinates map to a stable rect.
  */
-export default function useZoomPan({ clickScale = 2.5, maxScale = 4 }: Options = {}) {
+export default function useZoomPan({ clickScale = 1.75, maxScale = 4 }: Options = {}) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const [view, setViewState] = useState<View>(IDENTITY)
   const [gesturing, setGesturing] = useState(false)

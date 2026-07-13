@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Lightbox from './Lightbox'
 import type { Rug } from '@/lib/types'
 
-const HOVER_ZOOM_SCALE = 2.5
+const HOVER_ZOOM_SCALE = 1.75
 
 interface Props {
   rug: Rug
