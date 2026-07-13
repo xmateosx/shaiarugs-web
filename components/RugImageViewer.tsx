@@ -75,9 +75,10 @@ export default function RugImageViewer({ rug, title }: Props) {
                 src={rug.image_url}
                 alt={title}
                 fill
+                sizes="(max-width: 768px) 100vw, 58vw"
+                quality={90}
                 className="object-cover"
                 priority
-                unoptimized
                 draggable={false}
               />
             </div>

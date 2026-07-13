@@ -108,7 +108,7 @@ export default function AdminDashboard({ allRugs, adminSkus }: Props) {
                 style={{ backgroundColor: 'var(--cream-dark)' }}
               >
                 {rug.image_url ? (
-                  <Image src={rug.image_url} alt={title} fill className="object-cover" unoptimized />
+                  <Image src={rug.image_url} alt={title} fill sizes="56px" className="object-cover" />
                 ) : (
                   <div className="flex items-center justify-center h-full text-lg opacity-20" style={{ color: 'var(--burgundy)' }}>✦</div>
                 )}

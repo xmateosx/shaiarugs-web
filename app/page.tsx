@@ -66,8 +66,8 @@ export default function HomePage() {
                   alt="The Shaia Rugs booth, hung floor to ceiling with antique rugs"
                   fill
                   priority
+                  sizes="(max-width: 640px) 100vw, 58vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </div>
@@ -104,7 +104,6 @@ export default function HomePage() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
-                    unoptimized
                   />
                 ) : (
                   <FloralPlaceholder />
@@ -138,8 +137,8 @@ export default function HomePage() {
                       src={featured.image_url}
                       alt={[featured.origin.label, featured.rug_type].filter(Boolean).join(' ')}
                       fill
+                      sizes="(max-width: 768px) 100vw, 42vw"
                       className="object-cover"
-                      unoptimized
                     />
                   </div>
                 </div>
