@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Lightbox from './Lightbox'
+import FloralPlaceholder from './FloralPlaceholder'
 import type { Rug } from '@/lib/types'
 
 // Gentle "sneak peek" — invites a click into the lightbox rather than
@@ -53,16 +54,15 @@ export default function RugImageViewer({ rug, title }: Props) {
         aria-label={rug.image_url ? 'View fullscreen' : undefined}
       >
       <div
-        className="arch relative aspect-[4/5] overflow-hidden"
+        className="relative aspect-[4/5] overflow-hidden"
         style={{ backgroundColor: 'var(--cream-dark)' }}
         onMouseMove={handleMouseMove}
         onMouseLeave={() => setZoomed(false)}
       >
         {rug.image_url ? (
           <>
-            {/* Wrapper (not the img) is transformed: `.arch > img` carries the
-                arch radius, so scaling the img itself would scale its rounded
-                corners and expose background while panning */}
+            {/* The wrapper (not the img) carries the hover-zoom transform so
+                the container's overflow clipping stays crisp while panning */}
             <div
               ref={zoomWrapRef}
               className="absolute inset-0 will-change-transform"
@@ -95,12 +95,14 @@ export default function RugImageViewer({ rug, title }: Props) {
             </div>
           </>
         ) : (
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-            <div className="text-8xl opacity-10" style={{ color: 'var(--burgundy)' }}>✦</div>
-            <p className="text-sm tracking-widest uppercase opacity-30" style={{ color: 'var(--brown-mid)' }}>
-              Image coming soon
-            </p>
-          </div>
+          <>
+            <FloralPlaceholder />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-sm tracking-widest uppercase opacity-30" style={{ color: 'var(--brown-mid)' }}>
+                Image coming soon
+              </p>
+            </div>
+          </>
         )}
 
       </div>

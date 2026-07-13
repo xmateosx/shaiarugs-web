@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import FloralPlaceholder from '@/components/FloralPlaceholder'
 import { getAllRugs, getCategories, getRugsByCategory, getRugById, formatDimensions } from '@/lib/rugs'
 
 export default function HomePage() {
@@ -59,7 +60,7 @@ export default function HomePage() {
 
           <figure className="m-0 hidden sm:block">
             <div className="framed">
-              <div className="arch relative aspect-[4/3]">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src="/images/hero/booth.jpg"
                   alt="The Shaia Rugs booth, hung floor to ceiling with antique rugs"
@@ -93,10 +94,10 @@ export default function HomePage() {
           {tiles.map(({ cat, count, image }) => (
             <Link key={cat} href={`/collection?category=${encodeURIComponent(cat)}`} className="group block rug-card">
               <div
-                className="arch-soft relative aspect-[4/3] overflow-hidden"
+                className="relative aspect-[4/3] overflow-hidden"
                 style={{ backgroundColor: 'var(--cream-dark)' }}
               >
-                {image && (
+                {image ? (
                   <Image
                     src={image}
                     alt={cat}
@@ -105,6 +106,8 @@ export default function HomePage() {
                     className="object-cover"
                     unoptimized
                   />
+                ) : (
+                  <FloralPlaceholder />
                 )}
               </div>
               <div
@@ -130,7 +133,7 @@ export default function HomePage() {
             <figure className="m-0">
               {featured.image_url && (
                 <div className="framed">
-                  <div className="arch relative aspect-[4/5]">
+                  <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
                       src={featured.image_url}
                       alt={[featured.origin.label, featured.rug_type].filter(Boolean).join(' ')}

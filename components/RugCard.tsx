@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import FloralPlaceholder from './FloralPlaceholder'
 import type { Rug } from '@/lib/types'
 import { formatDimensions } from '@/lib/rugs'
 
@@ -45,13 +46,15 @@ export default function RugCard({ rug, onZoom }: Props) {
             )}
           </>
         ) : (
-          /* Elegant placeholder */
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4">
-            <div className="text-4xl opacity-20" style={{ color: 'var(--burgundy)' }}>&#10086;</div>
-            <p className="label text-center opacity-40" style={{ color: 'var(--brown-mid)' }}>
-              {rug.category}
-            </p>
-          </div>
+          /* Elegant placeholder — faint medallion-and-spandrel plan */
+          <>
+            <FloralPlaceholder />
+            <div className="absolute inset-0 flex items-center justify-center p-4">
+              <p className="label text-center opacity-40" style={{ color: 'var(--brown-mid)' }}>
+                {rug.category}
+              </p>
+            </div>
+          </>
         )}
       </div>
 
