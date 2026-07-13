@@ -4,7 +4,9 @@ import Image from 'next/image'
 import Lightbox from './Lightbox'
 import type { Rug } from '@/lib/types'
 
-const HOVER_ZOOM_SCALE = 1.75
+// Gentle "sneak peek" — invites a click into the lightbox rather than
+// serving as the inspection tool itself
+const HOVER_ZOOM_SCALE = 1.25
 
 interface Props {
   rug: Rug
